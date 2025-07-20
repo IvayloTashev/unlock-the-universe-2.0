@@ -1,1 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #111727;
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@theme {
+  --color-main: #0B0F1A;
+  --color-card: #1A1F2E;
+  --color-teal: #5EEAD4;
+  --color-skyblue: #7DD3FC;
+  --color-purple: #C084FC;
+  --color-text-white: #F8FAFC;
+  --color-text-gray: #94A3B8;
+
+  --font-manrope: Manrope, sans-serif;
+  --font-bebas: Bebas Neue, sans-serif;
+}
+
+/* 🌌 Design Direction & Visual Style
+1. Color Palette (Dark Mode)
+Use deep space tones with vibrant accent colors:
+•	Background: #0B0F1A (Deep navy)
+•	Card/Surface: #1A1F2E or #1C2233
+•	Primary Accent: #5EEAD4 (Teal glow)
+•	Secondary Accent: #7DD3FC (Sky blue) or #C084FC (Purple)
+•	Text:
+o	Main: #F8FAFC (near-white)
+o	Secondary: #94A3B8 (slate gray) */
