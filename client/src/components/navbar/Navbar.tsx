@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="bg-card text-text-gray text-2xl font-bebas px-6 border-b-1 border-gray-100/20">
       <div className="flex items-center justify-between h-25">
-        <Link to="/" className="z-30">
+        <Link to="/" className="z-30" onClick={() => setIsMenuToggled(false)}>
           <img className="h-22 rounded-4xl" src={navIcon} alt="planet" />
         </Link>
 
@@ -58,19 +58,19 @@ const Navbar = () => {
 
               <div>
                 <div className="flex flex-col justify-center items-center gap-8 mt-10">
-                  <Link to={"/explore"}>
+                  <Link to={"/explore"} onClick={() => setIsMenuToggled(false)}>
                     <p className={`${linkStyle}`}>Explore</p>
                   </Link>
 
-                  <Link to="/pod">
+                  <Link to="/pod" onClick={() => setIsMenuToggled(false)}>
                     <p className={`${linkStyle}`}>POD</p>
                   </Link>
 
-                  <Link to="/signup">
+                  <Link to="/signup" onClick={() => setIsMenuToggled(false)}>
                     <p className={`${linkStyle}`}>Sign Up</p>
                   </Link>
 
-                  <Link to="/register">
+                  <Link to="/register" onClick={() => setIsMenuToggled(false)}>
                     <p className={`${linkStyle}`}>Register</p>
                   </Link>
                 </div>
