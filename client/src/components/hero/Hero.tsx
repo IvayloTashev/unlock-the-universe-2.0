@@ -22,7 +22,7 @@ const Hero = () => {
           <img
             src={solarSystem3}
             alt="solarSystem"
-            className="absolute top-80 mx-auto mt-5 opacity-70"
+            className="absolute top-80 mx-auto sm:mt-15 opacity-70"
           />
           <HeroText position="top-1/2" />
         </div>
