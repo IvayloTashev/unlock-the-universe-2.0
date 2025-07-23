@@ -13,8 +13,8 @@ const Hero = () => {
     <section>
       {isAboveMediumScreen ? (
         <div className="h-screen overflow-hidden">
-          <img src={solarSystem2} alt="solarSystem" className="mx-auto w-full opacity-60" />
-          <HeroText position="top-1/2" />
+          <img src={solarSystem2} alt="solarSystem" className="w-full object-cover opacity-60" />
+          <HeroText position="top-2/5" />
         </div>
       ) : (
         <div className="relative">

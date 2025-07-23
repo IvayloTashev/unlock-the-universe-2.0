@@ -9,7 +9,7 @@ const Navbar = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width: 768px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
 
-  const linkStyle = "hover:text-purple transition duration-500";
+  const linkStyle = "hover:text-teal-500 hover:scale-110 transition duration-500";
 
   return (
     <nav className="bg-card text-text-gray text-2xl font-bebas px-6 border-b-1 border-gray-100/20">
