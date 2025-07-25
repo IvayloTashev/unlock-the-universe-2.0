@@ -25,7 +25,7 @@ const Navbar = () => {
                 <p className={`${linkStyle}`}>Explore</p>
               </Link>
 
-              <Link to="/pod">
+              <Link to="/picture-of-the-day">
                 <p className={`${linkStyle}`}>POD</p>
               </Link>
             </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
                     <p className={`${linkStyle}`}>Explore</p>
                   </Link>
 
-                  <Link to="/pod" onClick={() => setIsMenuToggled(false)}>
+                  <Link to="/picture-of-the-day" onClick={() => setIsMenuToggled(false)}>
                     <p className={`${linkStyle}`}>POD</p>
                   </Link>
 
