@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 type Props = {
   image: string;
   children: React.ReactNode;
+  title: string;
 };
 
-const CardExplore = ({ image, children }: Props) => {
+const CardExplore = ({ image, children, title }: Props) => {
   return (
-    <div className="w-full sm:w-[45%] md:w-[30%] lg:w-[25%] p-5 bg-card rounded-3xl border border-gray-100/20 group transition-all">
+    <Link to={title.toLowerCase().replaceAll(' ','')} className="w-full sm:w-[45%] md:w-[30%] lg:w-[25%] p-5 bg-card rounded-3xl border border-gray-100/20 group transition-all">
       <div className="flex flex-col items-center gap-5">
         <img
           src={image}
@@ -18,7 +20,7 @@ const CardExplore = ({ image, children }: Props) => {
           {children}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 
