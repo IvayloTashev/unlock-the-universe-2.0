@@ -1340,154 +1340,84 @@
         }
     };
     var seedData = {
-        celestialBodies: {
-            "343a7755-a1c0-42de-95a1-154c79f6c9f9": {
-                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                "title": "Stars",
-                "image": "https://science.nasa.gov/wp-content/uploads/2023/06/sun-h1180-jpg.webp?w=1920",
-                "urlTitle": "stars",
-                "description": "Stars are giant balls of hot gas - mostly hydrogen, with some helium and small amounts of other elements. Every star has its own life cycle, ranging from a few million to trillions of years, and its properties change as it ages.",
-                "_createdOn": 1722966828433,
-                "_id": "343a7755-a1c0-42de-95a1-154c79f6c9f9"
-            },
-            "356e4a2c-b4a9-4f9e-8ace-7a5f1b561471": {
-                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                "title": "Planets",
-                "image": "https://img.freepik.com/free-photo/planets-solar-system_23-2150042459.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722729600&semt=ais_hybrid",
-                "urlTitle": "planets",
-                "description": "A planet is a celestial body that is in orbit around the star, has sufficient mass for its self-gravity to overcome rigid body forces so that it assumes a hydrostatic equilibrium shape, and has cleared the neighborhood around its orbit.",
-                "_createdOn": 1722966874744,
-                "_id": "356e4a2c-b4a9-4f9e-8ace-7a5f1b561471"
-            },
-            "95849163-74b0-4256-976d-7f4b0428647f": {
-                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                "title": "Galaxies",
-                "image": "https://cdn.theatlantic.com/thumbor/cOJT3NgUpm_xigNqb7pz7yEGV9Q=/0x0:2133x1200/960x540/media/img/mt/2022/08/noirlab2219a/original.jpg",
-                "urlTitle": "galaxies",
-                "description": "Galaxies consist of stars, planets, and vast clouds of gas and dust, all bound together by gravity. The largest contain trillions of stars and can be more than a million light-years across. The smallest can contain a few thousand stars and span just a few hundred light-years.",
-                "_createdOn": 1722966901910,
-                "_id": "95849163-74b0-4256-976d-7f4b0428647f"
-            },
-            "1f86ccea-e7f8-45c2-b089-8c625abd100c": {
-                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                "title": "Black Holes",
-                "image": "https://cdn.mos.cms.futurecdn.net/HsDtpFEHbDpae6wBuW5wQo.jpg",
-                "urlTitle": "blackHoles",
-                "description": "A black hole is an astronomical object with a gravitational pull so strong that nothing, not even light, can escape it. A black hole's “surface,” called its event horizon, defines the boundary where the velocity needed to escape exceeds the speed of light, which is the speed limit of the cosmos.",
-                "_createdOn": 1722966921481,
-                "_id": "1f86ccea-e7f8-45c2-b089-8c625abd100c"
-            }
-        },
-        blackHoles: {
-            "5322ab7e-2f2c-46cb-a695-9fcc90a2b1f4": {
-                "title": "Sagittarius A*",
-                "distanceFromEarth": "26 670 light-years",
-                "image": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202205/MIT-EHT-01-PRESS_0.jpg?itok=405Q_KCo",
-                "type": "Supermassive black hole",
-                "description": "Sagittarius A* (Sgr A*) is a supermassive black hole at the center of the Milky Way galaxy. It is located near the border of the constellations Sagittarius and Scorpius, around 26,000 light-years from Earth. Sgr A* has a mass of approximately 4.3 million times that of the Sun. The black hole is surrounded by a hot accretion disk of material and is relatively quiescent compared to active galactic nuclei in other galaxies. Observations of stars orbiting Sgr A* have provided strong evidence for the existence of supermassive black holes.",
-                "age": "13.6 billion years",
-                "_id": "5322ab7e-2f2c-46cb-a695-9fcc90a2b1f4"
-            },
-            "9bba5e61-6f5e-4cf8-a574-da9aebfe4ae8": {
-                "title": "M87*",
-                "distanceFromEarth": "55 million light-years",
-                "image": "https://cdn.britannica.com/26/205226-050-B2621B00/Black-hole-M87-centre-evidence-supermassive-black.jpg",
-                "type": "Supermassive black hole",
-                "description": "M87*, also known as the black hole in the center of Messier 87, is a supermassive black hole located about 53.5 million light-years from Earth in the galaxy Messier 87. M87* has a mass of approximately 6.5 billion times that of the Sun, making it one of the most massive black holes known. In 2019, it became the first black hole to be directly imaged by the Event Horizon Telescope, revealing a bright ring of emission surrounding the event horizon. This image provided crucial evidence for the existence of black holes and their properties.",
-                "age": "13.25 billion years",
-                "_id": "9bba5e61-6f5e-4cf8-a574-da9aebfe4ae8"
-            }
-        },
-
-        galaxies: {
-            "297a8dc2-6455-4020-9284-b2d7995dab72": {
-                "title": "Milky Way",
-                "distanceFromEarth": "N/A",
-                "image": "https://images.interestingengineering.com/img/iea/nZwXlJlxwv/andromeda.jpg",
-                "type": "Spiral galaxy",
-                "description": "The Milky Way is the galaxy that contains our Solar System. The name describes the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye. The Milky Way is a barred spiral galaxy with an estimated 100–400 billion stars and at least that number of planets. It has a diameter of about 100,000 light-years and a thickness of approximately 1,000 light-years. The central bulge of the Milky Way contains a supermassive black hole known as Sagittarius A*.",
-                "age": "13.60 billion years",
-                "_id": "297a8dc2-6455-4020-9284-b2d7995dab72"
-            },
-            "506b2403-292d-4335-aed9-bfc71a2e499a": {
-                "title": "Andromeda",
-                "distanceFromEarth": "2.50 million light-years",
-                "image": "https://c02.purpledshub.com/uploads/sites/48/2020/12/05.VickiPink_Andromeda-dd432f7.jpg?w=1029&webp=1",
-                "type": "Spiral galaxy",
-                "description": "The Andromeda Galaxy, also known as M31, is a barred spiral galaxy approximately 2.537 million light-years from Earth. It is the nearest major galaxy to the Milky Way and the largest galaxy in the Local Group, which also contains the Milky Way, the Triangulum Galaxy, and about 54 other smaller galaxies. Andromeda is on a collision course with the Milky Way and is expected to merge with it in about 4.5 billion years, forming a new galaxy. Andromeda has a diameter of about 220,000 light-years and contains roughly one trillion stars.",
-                "age": "10 billion years",
-                "_id": "506b2403-292d-4335-aed9-bfc71a2e499a"
-            },
-            "9ac705cb-95db-4ee2-9644-332a39c06d46": {
-                "title": "Large Magellanic Cloud",
-                "distanceFromEarth": "163 000 light-years",
-                "image": "https://amazingsky.net/wp-content/uploads/2012/12/lmc-large-magellanic-cloud-135mm-5dii.jpg?w=1024",
-                "type": "Dwarf galaxy",
-                "description": "The Large Magellanic Cloud is a dwarf galaxy and satellite galaxy of the Milky Way. At a distance of around 163,000 light-years the LMC is the second- or third-closest galaxy to the Milky Way, after the Sagittarius Dwarf Spheroidal and the possible dwarf irregular galaxy called the Canis Major Overdensity. Based on the D25 isophote at the B-band, the Large Magellanic Cloud is about 32,200 light-years across. It is roughly one-hundredth the mass of the Milky Way and is the fourth-largest galaxy in the Local Group, after the Andromeda Galaxy, the Milky Way, and the Triangulum Galaxy.",
-                "age": "1.10 trillion years",
-                "_id": "9ac705cb-95db-4ee2-9644-332a39c06d46"
-            }
-        },
-
         planets: {
-            "833f8101-37c3-4e87-ab56-f83926bfacb6": {
+            "65660c3e-5122-4d75-afb6-0e477d64158c": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "title": "Mercury",
+                "image": "https://science.nasa.gov/wp-content/uploads/2023/05/mercury-from-messenger-pia15160-1920x640-1.jpg",
+                "facts": "Mercury is the smallest planet in our solar system and nearest to the Sun. It's only slightly larger than Earth's Moon. From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter.",
+                "introduction": "Mercury's surface temperatures are both extremely hot and cold. Because the planet is so close to the Sun, day temperatures can reach highs of 800°F (430°C). Without an atmosphere to retain that heat at night, temperatures can dip as low as -290°F (-180°C). Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system – that title belongs to nearby Venus, thanks to its dense atmosphere. But Mercury is the fastest planet, zipping around the Sun every 88 Earth days.",
+                "namesake": "Mercury is appropriately named for the swiftest of the ancient Roman gods.",
+                "potentialForLife": "Mercury's environment is not conducive to life as we know it. The temperatures and solar radiation that characterize this planet are most likely too extreme for organisms to adapt to.",
+                "sizeAndDistance": "With a radius of 1,516 miles (2,440 kilometers), Mercury is a little more than 1/3 the width of Earth. If Earth were the size of a nickel, Mercury would be about as big as a blueberry.From an average distance of 36 million miles (58 million kilometers), Mercury is 0.4 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 3.2 minutes to travel from the Sun to Mercury.",
+                "orbitAndRotation": "Mercury's highly eccentric, egg-shaped orbit takes the planet as close as 29 million miles (47 million kilometers) and as far as 43 million miles (70 million kilometers) from the Sun. It speeds around the Sun every 88 days, traveling through space at nearly 29 miles (47 kilometers) per second, faster than any other planet. Mercury spins slowly on its axis and completes one rotation every 59 Earth days. But when Mercury is moving fastest in its elliptical orbit around the Sun (and it is closest to the Sun), each rotation is not accompanied by sunrise and sunset like it is on most other planets. The morning Sun appears to rise briefly, set, and rise again from some parts of the planet's surface. The same thing happens in reverse at sunset for other parts of the surface. One Mercury solar day (one full day-night cycle) equals 176 Earth days – just over two years on Mercury. Mercury's axis of rotation is tilted just 2 degrees with respect to the plane of its orbit around the Sun. That means it spins nearly perfectly upright and so does not experience seasons as many other planets do.",
+                "moons": "Mercury doesn't have moons.",
+                "formation": "Mercury formed about 4.5 billion years ago when gravity pulled swirling gas and dust together to form this small planet nearest the Sun. Like its fellow terrestrial planets, Mercury has a central core, a rocky mantle, and a solid crust.",
+                "structure": "Mercury is the second densest planet, after Earth. It has a large metallic core with a radius of about 1,289 miles (2,074 kilometers), about 85% of the planet's radius. There is evidence that it is partly molten or liquid. Mercury's outer shell, comparable to Earth's outer shell (called the mantle and crust), is only about 400 kilometers (250 miles) thick.",
+                "surface": "Mercury's surface resembles that of Earth's Moon, scarred by many impact craters resulting from collisions with meteoroids and comets. Craters and features on Mercury are named after famous deceased artists, musicians, or authors, including children's author Dr. Seuss and dance pioneer Alvin Ailey.Very large impact basins, including Caloris (960 miles or 1,550 kilometers in diameter) and Rachmaninoff (190 miles, or 306 kilometers in diameter), were created by asteroid impacts on the planet's surface early in the solar system's history. While there are large areas of smooth terrain, there are also cliffs, some hundreds of miles long and soaring up to a mile high. They rose as the planet's interior cooled and contracted over the billions of years since Mercury formed. Most of Mercury's surface would appear greyish-brown to the human eye. The bright streaks are called \"crater rays.\" They are formed when an asteroid or comet strikes the surface. The tremendous amount of energy that is released in such an impact digs a big hole in the ground, and also crushes a huge amount of rock under the point of impact. Some of this crushed material is thrown far from the crater and then falls to the surface, forming the rays. Fine particles of crushed rock are more reflective than large pieces, so the rays look brighter. The space environment – dust impacts and solar-wind particles – causes the rays to darken with time. Temperatures on Mercury are extreme. During the day, temperatures on the surface can reach 800 degrees Fahrenheit (430 degrees Celsius). Because the planet has no atmosphere to retain that heat, nighttime temperatures on the surface can drop to minus 290 degrees Fahrenheit (minus 180 degrees Celsius). Mercury may have water ice at its north and south poles inside deep craters, but only in regions in permanent shadows. In those shadows, it could be cold enough to preserve water ice despite the high temperatures on sunlit parts of the planet.",
+                "atmosphere": "Instead of an atmosphere, Mercury possesses a thin exosphere made up of atoms blasted off the surface by the solar wind and striking meteoroids. Mercury's exosphere is composed mostly of oxygen, sodium, hydrogen, helium, and potassium.",
+                "magnetosphere": "Mercury's magnetic field is offset relative to the planet's equator. Though Mercury's magnetic field at the surface has just 1% the strength of Earth's, it interacts with the magnetic field of the solar wind to sometimes create intense magnetic tornadoes that funnel the fast, hot solar wind plasma down to the surface of the planet. When the ions strike the surface, they knock off neutrally charged atoms and send them on a loop high into the sky.",
+                "_createdOn": 1753534346330,
+                "_id": "65660c3e-5122-4d75-afb6-0e477d64158c"
+            },
+            "53185593-112c-432a-8e4a-3de4b3857f46": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "title": "Venus",
+                "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2024/03/venus-mariner-10-pia23791-fig2.jpg?w=1096&h=1096&fit=crop&crop=faces%2Cfocalpoint",
+                "facts": "Venus is the second planet from the Sun, and our closest planetary neighbor. It's the hottest planet in our solar system, and is sometimes called Earth's twin.",
+                "introduction": "Venus is the second planet from the Sun, and Earth's closest planetary neighbor. Venus is the third brightest object in the sky after the Sun and Moon. Venus spins slowly in the opposite direction from most planets.Venus is similar in structure and size to Earth, and is sometimes called Earth's evil twin. Its thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system with surface temperatures hot enough to melt lead. Below the dense, persistent clouds, the surface has volcanoes and deformed mountains.",
+                "namesake": "The ancient Romans could easily see seven bright objects in the sky: the Sun, the Moon, and the five brightest planets: Mercury, Venus, Mars, Jupiter, and Saturn. They named the objects after their most important gods. Venus is named for the ancient Roman goddess of love and beauty, who was known as Aphrodite to the ancient Greeks. Most features on Venus are named for women. It’s the only planet named after a female god.",
+                "potentialForLife": "Thirty miles up (about 50 kilometers) from the surface of Venus temperatures range from 86 to 158 Fahrenheit (30 to 70 Celsius). This temperature range could accommodate Earthly life, such as “extremophile” microbes. And atmospheric pressure at that height is similar to what we find on Earth’s surface. At the tops of Venus’ clouds, whipped around the planet by winds measured as high as 224 mph (360 kph), we find another transformation. Persistent, dark streaks appear. Scientists are so far unable to explain why these streaks remain stubbornly intact, even amid hurricane-force winds. They also have the odd habit of absorbing ultraviolet radiation. The most likely explanations focus on fine particles, ice crystals, or even a chemical compound called iron chloride. Although it's much less likely, another possibility considered by scientists who study astrobiology is that these streaks could be made up of microbial life, Venus-style. Astrobiologists note that ring-shaped linkages of sulfur atoms, known to exist in Venus’ atmosphere, could provide microbes with a kind of coating that would protect them from sulfuric acid. These handy chemical cloaks would also absorb potentially damaging ultraviolet light and re-radiate it as visible light. Some of the Russian Venera probes did, indeed, detect particles in Venus’ lower atmosphere about a micron in length – roughly the same size as a bacterium on Earth. None of these findings provide compelling evidence for the existence of life in Venus’ clouds. But the questions they raise, along with Venus’ vanished ocean, its violently volcanic surface, and its hellish history, make a compelling case for missions to investigate our temperamental sister planet. There is much, it would seem, that she can teach us.",
+                "sizeAndDistance": "Venus orbits the Sun from an average distance of 67 million miles (108 million kilometers), or 0.72 astronomical units. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight about six minutes to travel from the Sun to Venus. Earth's nearness to Venus is a matter of perspective. The planet is nearly as big around as Earth. Its diameter at its equator is about 7,521 miles (12,104 kilometers), versus 7,926 miles (12,756 kilometers) for Earth. From Earth, Venus is the brightest object in the night sky after our own Moon. The ancients, therefore, gave it great importance in their cultures, even thinking it was two objects: a morning star and an evening star. That’s where the trick of perspective comes in. Because Venus’ orbit is closer to the Sun than ours, the two of them – from our viewpoint – never stray far from each other. The ancient Egyptians and Greeks saw Venus in two guises: first in one orbital position (seen in the morning), then another (your “evening” Venus), just at different times of the year. At its nearest to Earth, Venus is about 24 million (about 38 million kilometers) away. But most of the time the two planets are farther apart. The maximum distance between Venus and Earth is about 162 million miles (261 million kilometers). Mercury, the innermost planet, actually spends more time in Earth’s proximity than Venus. One more trick of perspective: how Venus looks through binoculars or a telescope. Keep watch over many months, and you’ll notice that Venus has phases, just like our Moon – full, half, quarter, etc. The complete cycle, however, new to full, takes 584 days, while our Moon takes just a month. And it was this perspective, the phases of Venus first observed by Galileo through his telescope, that provided the key scientific proof for the Copernican heliocentric nature of the solar system.",
+                "orbitAndRotation": "Spending a day on Venus would be quite a disorienting experience - that is, if your spacecraft or spacesuit could protect you from temperatures in the range of 900 degrees Fahrenheit (475 Celsius). For one thing, your “day” would be 243 Earth days long – longer even than a Venus year (one trip around the Sun), which takes only 225 Earth days. For another, because of the planet's extremely slow rotation, sunrise to sunset would take 117 Earth days. And by the way, the Sun would rise in the west and set in the east, because Venus spins backward compared to Earth. While you’re waiting, don’t expect any seasonal relief from the unrelenting temperatures. On Earth, with its spin axis tilted by about 23 degrees, we experience summer when our part of the planet (our hemisphere) receives the Sun’s rays more directly – a result of that tilt. In winter, the tilt means the rays are less direct. No such luck on Venus: Its very slight tilt is only three degrees, which is too little to produce noticeable seasons.",
+                "moons": "Venus is one of only two planets in our solar system that doesn't have a moon, but it does have a quasi-satellite that has officially been named Zoozve. This object was discovered on Nov. 11, 2002, by Brian Skiff at the Lowell Observatory Near-Earth-Object Search (LONEOS) in Flagstaff, Arizona, a project funded by NASA that ended in February 2008. Quasi-satellites, sometimes called quasi-moons, are asteroids that orbit the Sun while staying close to a planet. A quasi-satellite’s orbit usually is more oblong and less stable than the planet's orbit. In time, the shape of a quasi-satellite’s orbit may change and it may move away from the planet. According to the International Astronomical Union (IAU), the organization that names space objects, Zoozve is the first-identified quasi-satellite of a major planet. Earth also has quasi-satellites, including a small asteroid discovered in 2016. Based on its brightness, scientists at NASA’s Jet Propulsion Laboratory (JPL) estimate Zoozve ranges in size from 660 feet (200 meters) to 1,640 feet (500 meters) across. Interestingly, Zoozve also orbits relatively close to Earth but does not pose a threat to our planet. For the next 175 years, the closest Zoozve will get to Earth is in the year 2149 when it will be about 2.2 million miles (3.5 million kilometers) away, or about 9 times the distance from Earth to the Moon.  ",
+                "formation": "A critical question for scientists who search for life among the stars: How do habitable planets get their start? The close similarities of early Venus and Earth, and their very different fates, provide a kind of test case for scientists who study planet formation. Similar size, similar interior structure, both harboring oceans in their younger days. Yet one is now an inferno, while the other is the only known world to host abundant life. The factors that set these planets on almost opposite paths began, most likely, in the swirling disk of gas and dust from which they were born. Somehow, 4.6 billion years ago that disk around our Sun accreted, cooled, and settled into the planets we know today. Better knowledge of the formation history of Venus could help us better understand Earth – and rocky planets around other stars.",
+                "structure": "If we could slice Venus and Earth in half, pole to pole, and place them side by side, they would look remarkably similar. Each planet has an iron core enveloped by a hot-rock mantle; the thinnest of skins forms a rocky, exterior crust. On both planets, this thin skin changes form and sometimes erupts into volcanoes in response to the ebb and flow of heat and pressure deep beneath. On Earth, the slow movement of continents over thousands and millions of years reshapes the surface, a process known as “plate tectonics.” Something similar might have happened on Venus early in its history. Today a key element of this process could be operating: subduction, or the sliding of one continental “plate” beneath another, which can also trigger volcanoes. Subduction is believed to be the first step in creating plate tectonics. NASA’s Magellan spacecraft, which ended a five-year mission to Venus in 1994, mapped the broiling surface using radar. Magellan saw a land of extreme volcanism – a relatively young surface, one recently reshaped (in geologic terms), and chains of towering mountains.",
+                "surface": "The Soviet Union sent a series of probes to Venus between 1961 and 1984 as part of its Venera program (Venera is Russian for Venus). Ten probes made it to the surface, and a few functioned briefly after landing. The longest survivor lasted two hours; the shortest, 23 minutes. Photos snapped before the landers fried show a barren, dim, and rocky landscape, and a sky that is likely some shade of sulfur yellow. Volcanoes and tectonic forces appear to have erased most traces of the early surface of Venus. Newer computer models indicate the resurfacing may have happened piecemeal over an extended period of time. The average age of surface features could be as young as 150 million years, with some older surfaces mixed in. Venus has valleys and high mountains dotted with thousands of volcanoes. Its surface features – most named for both real and mythical women – include Ishtar Terra, a rocky, highland area around the size of Australia near the north pole, and an even larger, South-America-sized region called Aphrodite Terra that stretches across the equator. One mountain reaches 36,000 feet (11 kilometers), higher than Mt. Everest. Notably, except for Earth, Venus has by far the fewest impact craters of any rocky planet.",
+                "atmosphere": "Venus atmosphere is one of extremes. With the hottest surface in the solar system, apart from the Sun itself, Venus is hotter even than the innermost planet, charbroiled Mercury. The atmosphere is mostly carbon dioxide – the same gas driving the greenhouse effect on Venus and Earth – with clouds composed of sulfuric acid. And at the surface, the hot, high-pressure carbon dioxide behaves in a corrosive fashion. But higher up in the atmosphere, temperatures and pressure begin to ease.",
+                "magnetosphere": "Even though Venus is similar in size to Earth and has a similar-sized iron core, the planet does not have its own internally generated magnetic field. Instead, Venus has what is known as an induced magnetic field. This weak magnetic field is created by the interaction of the Sun's magnetic field and the planet's outer atmosphere. Ultraviolet light from the Sun excites gases in Venus' outermost atmosphere; these electrically excited gases are called ions, and thus this region is called the ionosphere (Earth has an ionosphere as well). The solar wind – a million-mile-per-hour gale of electrically charged particles streaming continuously from the Sun – carries with it the Sun's magnetic field. When the Sun's magnetic field interacts with the electrically excited ionosphere of Venus, it creates or induces, a magnetic field there. This induced magnetic field envelops the planet and is shaped like an extended teardrop, or the tail of a comet, as the solar wind blows past Venus and outward into the solar system.",
+                "_createdOn": 1753535734099,
+                "_id": "53185593-112c-432a-8e4a-3de4b3857f46"
+            },
+
+            "d4d81001-1294-4232-8efb-1c2c93bff066": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 "title": "Earth",
-                "distanceFromEarth": "N/A",
-                "image": "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D",
-                "type": "Terrestrial planet",
-                "description": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other freshwater, which together constitute the hydrosphere. Earth's atmosphere consists mostly of nitrogen and oxygen. Earth's climate is influenced by factors such as oceans, landforms, and atmospheric conditions, leading to various climates and ecosystems around the world.",
-                "age": "4.543 billion years",
-                "_id": "833f8101-37c3-4e87-ab56-f83926bfacb6"
+                "image": "https://science.nasa.gov/wp-content/uploads/2023/05/earth-1-jpg.webp?w=1600%22",
+                "facts": "While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.",
+                "introduction": "Earth is the third planet from the Sun and the only known world to support life. With vast oceans, a breathable atmosphere, and a protective magnetic field, Earth is uniquely suited for living organisms. It’s home to millions of species and has a dynamic climate and surface shaped by water, wind, and tectonic activity. Orbiting the Sun once every 365 days, Earth’s rotation creates day and night, while its tilted axis gives us seasons.",
+                "namesake": "The name Earth is at least 1,000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means “the ground.”",
+                "potentialForLife": "Earth has a very hospitable temperature and mix of chemicals that have made life abundant here. Most notably, Earth is unique in that most of our planet is covered in liquid water, since the temperature allows liquid water to exist for extended periods of time. Earth's vast oceans provided a convenient place for life to begin about 3.8 billion years ago. Some of the features of our planet that make it great for sustaining life are changing due to the ongoing effects of climate change.",
+                "sizeAndDistance": "With an equatorial diameter of 7926 miles (12,760 kilometers), Earth is the biggest of the terrestrial planets and the fifth largest planet in our solar system. From an average distance of 93 million miles (150 million kilometers), Earth is exactly one astronomical unit away from the Sun because one astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. This unit provides an easy way to quickly compare planets' distances from the Sun. It takes about eight minutes for light from the Sun to reach our planet.",
+                "orbitAndRotation": "As Earth orbits the Sun, it completes one rotation every 23.9 hours. It takes 365.25 days to complete one trip around the Sun. That extra quarter of a day presents a challenge to our calendar system, which counts one year as 365 days. To keep our yearly calendars consistent with our orbit around the Sun, every four years we add one day. That day is called a leap day, and the year it's added to is called a leap year. Earth's axis of rotation is tilted 23.4 degrees with respect to the plane of Earth's orbit around the Sun. This tilt causes our yearly cycle of seasons. During part of the year, the northern hemisphere is tilted toward the Sun, and the southern hemisphere is tilted away. With the Sun higher in the sky, solar heating is greater in the north producing summer there. Less direct solar heating produces winter in the south. Six months later, the situation is reversed. When spring and fall begin, both hemispheres receive roughly equal amounts of heat from the Sun.",
+                "moons": "Earth is the only planet that has a single moon. Our Moon is the brightest and most familiar object in the night sky. In many ways, the Moon is responsible for making Earth such a great home. It stabilizes our planet's wobble, which has made the climate less variable over thousands of years. Earth sometimes temporarily hosts orbiting asteroids or large rocks. They are typically trapped by Earth's gravity for a few months or years before returning to an orbit around the Sun. Some asteroids will be in a long “dance” with Earth as both orbit the Sun. Some moons are bits of rock that were captured by a planet's gravity, but our Moon is likely the result of a collision billions of years ago. When Earth was a young planet, a large chunk of rock smashed into it, displacing a portion of Earth's interior. The resulting chunks clumped together and formed our Moon. With a radius of 1,080 miles (1,738 kilometers), the Moon is the fifth largest moon in our solar system (after Ganymede, Titan, Callisto, and Io). The Moon is an average of 238,855 miles (384,400 kilometers) away from Earth. That means 30 Earth-sized planets could fit in between Earth and its Moon.",
+                "formation": "When the solar system settled into its current layout about 4.5 billion years ago, Earth formed when gravity pulled swirling gas and dust in to become the third planet from the Sun. Like its fellow terrestrial planets, Earth has a central core, a rocky mantle, and a solid crust.",
+                "structure": "Earth is composed of four main layers, starting with an inner core at the planet's center, enveloped by the outer core, mantle, and crust. The inner core is a solid sphere made of iron and nickel metals about 759 miles (1,221 kilometers) in radius. There the temperature is as high as 9,800 degrees Fahrenheit (5,400 degrees Celsius). Surrounding the inner core is the outer core. This layer is about 1,400 miles (2,300 kilometers) thick, made of iron and nickel fluids. In between the outer core and crust is the mantle, the thickest layer. This hot, viscous mixture of molten rock is about 1,800 miles (2,900 kilometers) thick and has the consistency of caramel. The outermost layer, Earth's crust, goes about 19 miles (30 kilometers) deep on average on land. At the bottom of the ocean, the crust is thinner and extends about 3 miles (5 kilometers) from the seafloor to the top of the mantle.",
+                "surface": "Like Mars and Venus, Earth has volcanoes, mountains, and valleys. Earth's lithosphere, which includes the crust (both continental and oceanic) and the upper mantle, is divided into huge plates that are constantly moving. For example, the North American plate moves west over the Pacific Ocean basin, roughly at a rate equal to the growth of our fingernails. Earthquakes result when plates grind past one another, ride up over one another, collide to make mountains, or split and separate. Earth's global ocean, which covers nearly 70% of the planet's surface, has an average depth of about 2.5 miles (4 kilometers) and contains 97% of Earth's water. Almost all of Earth's volcanoes are hidden under these oceans. Hawaii's Mauna Kea volcano is taller from base to summit than Mount Everest, but most of it is underwater. Earth's longest mountain range is also underwater, at the bottom of the Arctic and Atlantic oceans. It is four times longer than the Andes, Rockies and Himalayas combined.",
+                "atmosphere": "Near the surface, Earth has an atmosphere that consists of 78% nitrogen, 21% oxygen, and 1% other gases such as argon, carbon dioxide, and neon. The atmosphere affects Earth's long-term climate and short-term local weather and shields us from much of the harmful radiation coming from the Sun. It also protects us from meteoroids, most of which burn up in the atmosphere, seen as meteors in the night sky, before they can strike the surface as meteorites.",
+                "magnetosphere": "Our planet's rapid rotation and molten nickel-iron core give rise to a magnetic field, which the solar wind distorts into a teardrop shape in space. (The solar wind is a stream of charged particles continuously ejected from the Sun.) When charged particles from the solar wind become trapped in Earth's magnetic field, they collide with air molecules above our planet's magnetic poles. These air molecules then begin to glow and cause aurorae, or the northern and southern lights. The magnetic field is what causes compass needles to point to the North Pole regardless of which way you turn. But the magnetic polarity of Earth can change, flipping the direction of the magnetic field. The geologic record tells scientists that a magnetic reversal takes place about every 400,000 years on average, but the timing is very irregular. As far as we know, such a magnetic reversal doesn't cause any harm to life on Earth, and a reversal is very unlikely to happen for at least another thousand years. But when it does happen, compass needles are likely to point in many different directions for a few centuries while the switch is being made. And after the switch is completed, they will all point south instead of north.",
+                "_createdOn": 1753536249241,
+                "_id": "d4d81001-1294-4232-8efb-1c2c93bff066"
             },
 
-            "b23c2c64-96b4-4ad0-9e76-2c07a6bd5720": {
+            "cfc6efc0-afc1-407e-84ef-82fdacbe33af": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 "title": "Mars",
-                "distanceFromEarth": "54 million km",
-                "image": "https://starwalk.space/gallery/images/mars-the-ultimate-guide/1920x1080.jpg",
-                "type": "Terrestrial planet",
-                "description": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the 'Red Planet' because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, with surface features reminiscent of both Earth's impact craters and valleys, deserts, and polar ice caps. It is home to Olympus Mons, the tallest volcano and second-highest known mountain in the Solar System, and Valles Marineris, one of the largest canyons.",
-                "age": "4.6 billion years",
-                "_id": "b23c2c64-96b4-4ad0-9e76-2c07a6bd5720"
-            },
-
-            "6efdc6c3-eb05-4a4c-8845-3d49d2cfa143": {
-                "title": "Jupiter",
-                "distanceFromEarth": "714 million km",
-                "image": "https://www.universetoday.com/wp-content/uploads/2008/05/jupiter_cassini.jpg",
-                "type": "Gas giant",
-                "description": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined. Jupiter's atmosphere is primarily composed of hydrogen and helium. The planet is known for its prominent Great Red Spot, a giant storm that has been observed for over 300 years. Jupiter has at least 79 moons, including the four large Galilean moons: Io, Europa, Ganymede, and Callisto. Ganymede, the largest of these, has a diameter greater than that of the planet Mercury.",
-                "age": "4.6 billion years",
-                "_id": "6efdc6c3-eb05-4a4c-8845-3d49d2cfa143"
-            }
-        },
-
-        stars: {
-            "716b02ab-7ba4-4055-bb8c-b8edf1e85ad2": {
-                "title": "Sun",
-                "distanceFromEarth": "149 million km",
-                "image": "https://spaceplace.nasa.gov/gallery-sun/en/solar-flare.en.jpg",
-                "type": "Yellow dwarf",
-                "description": "The Sun is the star at the center of the Solar System. It is a massive, nearly perfect sphere of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy from its surface mainly as visible light and infrared radiation with 10% at ultraviolet energies. It is by far the most important source of energy for life on Earth. The Sun has been an object of veneration in many cultures. It has been a central subject for astronomical research since antiquity.",
-                "age": "4.6 billion years",
-                "_id": "716b02ab-7ba4-4055-bb8c-b8edf1e85ad2"
-            },
-            "829d7e3b-4b46-4c3d-bfcd-e497fcd25d85": {
-                "title": "Sirius B",
-                "distanceFromEarth": "8.60 light-years",
-                "image": "https://static.independent.co.uk/2021/10/19/05/white-dwarf-file.jpeg?quality=75&width=1200&auto=webp",
-                "type": "White dwarf",
-                "description": "Sirius B, a white dwarf, is very faint because of its tiny size, only 7,500 miles in diameter. White dwarfs are the leftover remnants of stars similar to the sun. They have exhausted their nuclear fuel sources and have collapsed down to a very small size. Sirius B is about 10,000 times fainter than Sirius A",
-                "age": "230 million years",
-                "_id": "829d7e3b-4b46-4c3d-bfcd-e497fcd25d85"
-            },
-            "a118bf97-5ff1-4e32-b1d9-0bfed4f64ba7": {
-                "title": "Proxima Centauri",
-                "distanceFromEarth": "4.24 light-years",
-                "image": "https://theplanets.org/123/2021/05/red-dwarf-star.png",
-                "type": "Red dwarf",
-                "description": "Proxima Centauri is a small, low-mass star located 4.2465 light-years (1.3020 pc) away from the Sun in the southern constellation of Centaurus. Its Latin name means the 'nearest [star] of Centaurus'. It was discovered in 1915 by Robert Innes and is the nearest-known star to the Sun. With a quiescent apparent magnitude of 11.13, it is too faint to be seen with the unaided eye. Proxima Centauri is a member of the Alpha Centauri star system, being identified as component Alpha Centauri C, and is 2.18° to the southwest of the Alpha Centauri AB pair. It is currently 12,950 AU (0.2 ly) from AB, which it orbits with a period of about 550,000 years.",
-                "age": "4.85 billion years",
-                "_id": "a118bf97-5ff1-4e32-b1d9-0bfed4f64ba7"
+                "image": "https://science.nasa.gov/wp-content/uploads/2024/03/pia04304-mars.jpg?w=1536",
+                "facts": "Mars – the fourth planet from the Sun – is a dusty, cold, desert world with a very thin atmosphere. This dynamic planet has seasons, polar ice caps, extinct volcanoes, canyons and weather.",
+                "introduction": "Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape. NASA missions have found lots of evidence that Mars was much wetter and warmer, with a thicker atmosphere, billions of years ago. Mars was named by the Romans for their god of war because its reddish color was reminiscent of blood. The Egyptians called it \"Her Desher,\" meaning \"the red one.\" Even today, it is frequently called the \"Red Planet\" because iron minerals in the Martian dirt oxidize, or rust, causing the surface to look red.",
+                "namesake": "Mars was named by the ancient Romans for their god of war because its reddish color was reminiscent of blood. Other civilizations also named the planet for this attribute – for example, the Egyptians called it \"Her Desher,\" meaning \"the red one.\" Even today, it is frequently called the \"Red Planet\" because iron minerals in the Martian dirt oxidize, or rust, causing the surface to look red.",
+                "potentialForLife": "Scientists don't expect to find living things currently thriving on Mars. Instead, they're looking for signs of life that existed long ago, when Mars was warmer and covered with water.",
+                "sizeAndDistance": "With a radius of 2,106 miles (3,390 kilometers), Mars is about half the size of Earth. If Earth were the size of a nickel, Mars would be about as big as a raspberry. From an average distance of 142 million miles (228 million kilometers), Mars is 1.5 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 13 minutes to travel from the Sun to Mars.",
+                "orbitAndRotation": "As Mars orbits the Sun, it completes one rotation every 24.6 hours, which is very similar to one day on Earth (23.9 hours). Martian days are called sols – short for \"solar day.\" A year on Mars lasts 669.6 sols, which is the same as 687 Earth days. Mars' axis of rotation is tilted 25 degrees with respect to the plane of its orbit around the Sun. This is another similarity with Earth, which has an axial tilt of 23.4 degrees. Like Earth, Mars has distinct seasons, but they last longer than seasons here on Earth since Mars takes longer to orbit the Sun (because it's farther away). And while here on Earth the seasons are evenly spread over the year, lasting 3 months (or one quarter of a year), on Mars the seasons vary in length because of Mars' elliptical, egg-shaped orbit around the Sun. Spring in the northern hemisphere (autumn in the southern) is the longest season at 194 sols. Autumn in the northern hemisphere (spring in the southern) is the shortest at 142 days. Northern winter/southern summer is 154 sols, and northern summer/southern winter is 178 sols.",
+                "moons": "Mars has two small moons, Phobos and Deimos, that may be captured asteroids. They're potato-shaped because they have too little mass for gravity to make them spherical. The moons get their names from the horses that pulled the chariot of the Greek god of war, Ares. Phobos, the innermost and larger moon, is heavily cratered, with deep grooves on its surface. It is slowly moving towards Mars and will crash into the planet or break apart in about 50 million years. Deimos is about half as big as Phobos and orbits two and a half times farther away from Mars. Oddly-shaped Deimos is covered in loose dirt that often fills the craters on its surface, making it appear smoother than pockmarked Phobos.",
+                "formation": "When the solar system settled into its current layout about 4.5 billion years ago, Mars formed when gravity pulled swirling gas and dust in to become the fourth planet from the Sun. Mars is about half the size of Earth, and like its fellow terrestrial planets, it has a central core, a rocky mantle, and a solid crust.",
+                "structure": "Mars has a dense core at its center between 930 and 1,300 miles (1,500 to 2,100 kilometers) in radius. It's made of iron, nickel, and sulfur. Surrounding the core is a rocky mantle between 770 and 1,170 miles (1,240 to 1,880 kilometers) thick, and above that, a crust made of iron, magnesium, aluminum, calcium, and potassium. This crust is between 6 and 30 miles (10 to 50 kilometers) deep.",
+                "surface": "The Red Planet is actually many colors. At the surface, we see colors such as brown, gold, and tan. The reason Mars looks reddish is due to oxidization – or rusting – of iron in the rocks, regolith (Martian “soil”), and dust of Mars. This dust gets kicked up into the atmosphere and from a distance makes the planet appear mostly red. Interestingly, while Mars is about half the diameter of Earth, its surface has nearly the same area as Earth’s dry land. Its volcanoes, impact craters, crustal movement, and atmospheric conditions such as dust storms have altered the landscape of Mars over many years, creating some of the solar system's most interesting topographical features. A large canyon system called Valles Marineris is long enough to stretch from California to New York – more than 3,000 miles (4,800 kilometers). This Martian canyon is 200 miles (320 kilometers) at its widest and 4.3 miles (7 kilometers) at its deepest. That's about 10 times the size of Earth's Grand Canyon. Mars is home to the largest volcano in the solar system, Olympus Mons. It's three times taller than Earth's Mount Everest — which rises 29,029 feet, or 8,848 meters, above the Earth's surface — with a base the size of the state of New Mexico. Olympus Mons stands Mars appears to have had a watery past, with ancient river valley networks, deltas, and lakebeds, as well as rocks and minerals on the surface that could only have formed in liquid water. Some features suggest that Mars experienced huge floods about 3.5 billion years ago. There is water on Mars today, but the Martian atmosphere is too thin for liquid water to exist for long on the surface. Today, water on Mars is found in the form of water-ice just under the surface in the polar regions as well as in briny (salty) water, which seasonally flows down some hillsides and crater walls.",
+                "atmosphere": "Mars has a thin atmosphere made up mostly of carbon dioxide, nitrogen, and argon gases. To our eyes, the sky would be hazy and red because of suspended dust instead of the familiar blue tint we see on Earth. Mars' sparse atmosphere doesn't offer much protection from impacts by such objects as meteorites, asteroids, and comets. The temperature on Mars can be as high as 70 degrees Fahrenheit (20 degrees Celsius) or as low as about -225 degrees Fahrenheit (-153 degrees Celsius). And because the atmosphere is so thin, heat from the Sun easily escapes this planet. If you were to stand on the surface of Mars on the equator at noon, it would feel like spring at your feet (75 degrees Fahrenheit or 24 degrees Celsius) and winter at your head (32 degrees Fahrenheit or 0 degrees Celsius). Occasionally, winds on Mars are strong enough to create dust storms that cover much of the planet. After such storms, it can be months before all of the dust settles.",
+                "magnetosphere": "Mars has no global magnetic field today, but areas of the Martian crust in the southern hemisphere are highly magnetized, indicating traces of a magnetic field from 4 billion years ago.",
+                "_createdOn": 1753536605672,
+                "_id": "cfc6efc0-afc1-407e-84ef-82fdacbe33af"
             }
         },
 
@@ -1518,59 +1448,6 @@
             }
         },
 
-        recipes: {
-            "3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                name: "Easy Lasagna",
-                img: "assets/lasagna.jpg",
-                ingredients: [
-                    "1 tbsp Ingredient 1",
-                    "2 cups Ingredient 2",
-                    "500 g  Ingredient 3",
-                    "25 g Ingredient 4"
-                ],
-                steps: [
-                    "Prepare ingredients",
-                    "Mix ingredients",
-                    "Cook until done"
-                ],
-                _createdOn: 1613551279012
-            },
-            "8f414b4f-ab39-4d36-bedb-2ad69da9c830": {
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                name: "Grilled Duck Fillet",
-                img: "assets/roast.jpg",
-                ingredients: [
-                    "500 g  Ingredient 1",
-                    "3 tbsp Ingredient 2",
-                    "2 cups Ingredient 3"
-                ],
-                steps: [
-                    "Prepare ingredients",
-                    "Mix ingredients",
-                    "Cook until done"
-                ],
-                _createdOn: 1613551344360
-            },
-            "985d9eab-ad2e-4622-a5c8-116261fb1fd2": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                name: "Roast Trout",
-                img: "assets/fish.jpg",
-                ingredients: [
-                    "4 cups Ingredient 1",
-                    "1 tbsp Ingredient 2",
-                    "1 tbsp Ingredient 3",
-                    "750 g  Ingredient 4",
-                    "25 g Ingredient 5"
-                ],
-                steps: [
-                    "Prepare ingredients",
-                    "Mix ingredients",
-                    "Cook until done"
-                ],
-                _createdOn: 1613551388703
-            }
-        },
         comments: {
             "fae2375c-1e62-4430-a7c9-42f05aeb7e8e": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
@@ -1592,248 +1469,6 @@
                 "text": "Good job! Fantastic photo.",
                 "_createdOn": 1722877911519,
                 "_id": "d7b2e4d8-0274-4d75-8948-cf0e47811006"
-            }
-        },
-        records: {
-            i01: {
-                name: "John1",
-                val: 1,
-                _createdOn: 1613551388703
-            },
-            i02: {
-                name: "John2",
-                val: 1,
-                _createdOn: 1613551388713
-            },
-            i03: {
-                name: "John3",
-                val: 2,
-                _createdOn: 1613551388723
-            },
-            i04: {
-                name: "John4",
-                val: 2,
-                _createdOn: 1613551388733
-            },
-            i05: {
-                name: "John5",
-                val: 2,
-                _createdOn: 1613551388743
-            },
-            i06: {
-                name: "John6",
-                val: 3,
-                _createdOn: 1613551388753
-            },
-            i07: {
-                name: "John7",
-                val: 3,
-                _createdOn: 1613551388763
-            },
-            i08: {
-                name: "John8",
-                val: 2,
-                _createdOn: 1613551388773
-            },
-            i09: {
-                name: "John9",
-                val: 3,
-                _createdOn: 1613551388783
-            },
-            i10: {
-                name: "John10",
-                val: 1,
-                _createdOn: 1613551388793
-            }
-        },
-        catches: {
-            "07f260f4-466c-4607-9a33-f7273b24f1b4": {
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                angler: "Paulo Admorim",
-                weight: 636,
-                species: "Atlantic Blue Marlin",
-                location: "Vitoria, Brazil",
-                bait: "trolled pink",
-                captureTime: 80,
-                _createdOn: 1614760714812,
-                _id: "07f260f4-466c-4607-9a33-f7273b24f1b4"
-            },
-            "bdabf5e9-23be-40a1-9f14-9117b6702a9d": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                angler: "John Does",
-                weight: 554,
-                species: "Atlantic Blue Marlin",
-                location: "Buenos Aires, Argentina",
-                bait: "trolled pink",
-                captureTime: 120,
-                _createdOn: 1614760782277,
-                _id: "bdabf5e9-23be-40a1-9f14-9117b6702a9d"
-            }
-        },
-        furniture: {
-        },
-        orders: {
-        },
-        movies: {
-            "1240549d-f0e0-497e-ab99-eb8f703713d7": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                title: "Black Widow",
-                description: "Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Comes on the screens 2020.",
-                img: "https://miro.medium.com/max/735/1*akkAa2CcbKqHsvqVusF3-w.jpeg",
-                _createdOn: 1614935055353,
-                _id: "1240549d-f0e0-497e-ab99-eb8f703713d7"
-            },
-            "143e5265-333e-4150-80e4-16b61de31aa0": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                title: "Wonder Woman 1984",
-                description: "Diana must contend with a work colleague and businessman, whose desire for extreme wealth sends the world down a path of destruction, after an ancient artifact that grants wishes goes missing.",
-                img: "https://pbs.twimg.com/media/ETINgKwWAAAyA4r.jpg",
-                _createdOn: 1614935181470,
-                _id: "143e5265-333e-4150-80e4-16b61de31aa0"
-            },
-            "a9bae6d8-793e-46c4-a9db-deb9e3484909": {
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                title: "Top Gun 2",
-                description: "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.",
-                img: "https://i.pinimg.com/originals/f2/a4/58/f2a458048757bc6914d559c9e4dc962a.jpg",
-                _createdOn: 1614935268135,
-                _id: "a9bae6d8-793e-46c4-a9db-deb9e3484909"
-            }
-        },
-        likes: {
-        },
-        ideas: {
-            "833e0e57-71dc-42c0-b387-0ce0caf5225e": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                title: "Best Pilates Workout To Do At Home",
-                description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima possimus eveniet ullam aspernatur corporis tempore quia nesciunt nostrum mollitia consequatur. At ducimus amet aliquid magnam nulla sed totam blanditiis ullam atque facilis corrupti quidem nisi iusto saepe, consectetur culpa possimus quos? Repellendus, dicta pariatur! Delectus, placeat debitis error dignissimos nesciunt magni possimus quo nulla, fuga corporis maxime minus nihil doloremque aliquam quia recusandae harum. Molestias dolorum recusandae commodi velit cum sapiente placeat alias rerum illum repudiandae? Suscipit tempore dolore autem, neque debitis quisquam molestias officia hic nesciunt? Obcaecati optio fugit blanditiis, explicabo odio at dicta asperiores distinctio expedita dolor est aperiam earum! Molestias sequi aliquid molestiae, voluptatum doloremque saepe dignissimos quidem quas harum quo. Eum nemo voluptatem hic corrupti officiis eaque et temporibus error totam numquam sequi nostrum assumenda eius voluptatibus quia sed vel, rerum, excepturi maxime? Pariatur, provident hic? Soluta corrupti aspernatur exercitationem vitae accusantium ut ullam dolor quod!",
-                img: "./images/best-pilates-youtube-workouts-2__medium_4x3.jpg",
-                _createdOn: 1615033373504,
-                _id: "833e0e57-71dc-42c0-b387-0ce0caf5225e"
-            },
-            "247efaa7-8a3e-48a7-813f-b5bfdad0f46c": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                title: "4 Eady DIY Idea To Try!",
-                description: "Similique rem culpa nemo hic recusandae perspiciatis quidem, quia expedita, sapiente est itaque optio enim placeat voluptates sit, fugit dignissimos tenetur temporibus exercitationem in quis magni sunt vel. Corporis officiis ut sapiente exercitationem consectetur debitis suscipit laborum quo enim iusto, labore, quod quam libero aliquid accusantium! Voluptatum quos porro fugit soluta tempore praesentium ratione dolorum impedit sunt dolores quod labore laudantium beatae architecto perspiciatis natus cupiditate, iure quia aliquid, iusto modi esse!",
-                img: "./images/brightideacropped.jpg",
-                _createdOn: 1615033452480,
-                _id: "247efaa7-8a3e-48a7-813f-b5bfdad0f46c"
-            },
-            "b8608c22-dd57-4b24-948e-b358f536b958": {
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                title: "Dinner Recipe",
-                description: "Consectetur labore et corporis nihil, officiis tempora, hic ex commodi sit aspernatur ad minima? Voluptas nesciunt, blanditiis ex nulla incidunt facere tempora laborum ut aliquid beatae obcaecati quidem reprehenderit consequatur quis iure natus quia totam vel. Amet explicabo quidem repellat unde tempore et totam minima mollitia, adipisci vel autem, enim voluptatem quasi exercitationem dolor cum repudiandae dolores nostrum sit ullam atque dicta, tempora iusto eaque! Rerum debitis voluptate impedit corrupti quibusdam consequatur minima, earum asperiores soluta. A provident reiciendis voluptates et numquam totam eveniet! Dolorum corporis libero dicta laborum illum accusamus ullam?",
-                img: "./images/dinner.jpg",
-                _createdOn: 1615033491967,
-                _id: "b8608c22-dd57-4b24-948e-b358f536b958"
-            }
-        },
-        catalog: {
-            "53d4dbf5-7f41-47ba-b485-43eccb91cb95": {
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                make: "Table",
-                model: "Swedish",
-                year: 2015,
-                description: "Medium table",
-                price: 235,
-                img: "./images/table.png",
-                material: "Hardwood",
-                _createdOn: 1615545143015,
-                _id: "53d4dbf5-7f41-47ba-b485-43eccb91cb95"
-            },
-            "f5929b5c-bca4-4026-8e6e-c09e73908f77": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                make: "Sofa",
-                model: "ES-549-M",
-                year: 2018,
-                description: "Three-person sofa, blue",
-                price: 1200,
-                img: "./images/sofa.jpg",
-                material: "Frame - steel, plastic; Upholstery - fabric",
-                _createdOn: 1615545572296,
-                _id: "f5929b5c-bca4-4026-8e6e-c09e73908f77"
-            },
-            "c7f51805-242b-45ed-ae3e-80b68605141b": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                make: "Chair",
-                model: "Bright Dining Collection",
-                year: 2017,
-                description: "Dining chair",
-                price: 180,
-                img: "./images/chair.jpg",
-                material: "Wood laminate; leather",
-                _createdOn: 1615546332126,
-                _id: "c7f51805-242b-45ed-ae3e-80b68605141b"
-            }
-        },
-        teams: {
-            "34a1cab1-81f1-47e5-aec3-ab6c9810efe1": {
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                name: "Storm Troopers",
-                logoUrl: "/assets/atat.png",
-                description: "These ARE the droids we're looking for",
-                _createdOn: 1615737591748,
-                _id: "34a1cab1-81f1-47e5-aec3-ab6c9810efe1"
-            },
-            "dc888b1a-400f-47f3-9619-07607966feb8": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                name: "Team Rocket",
-                logoUrl: "/assets/rocket.png",
-                description: "Gotta catch 'em all!",
-                _createdOn: 1615737655083,
-                _id: "dc888b1a-400f-47f3-9619-07607966feb8"
-            },
-            "733fa9a1-26b6-490d-b299-21f120b2f53a": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                name: "Minions",
-                logoUrl: "/assets/hydrant.png",
-                description: "Friendly neighbourhood jelly beans, helping evil-doers succeed.",
-                _createdOn: 1615737688036,
-                _id: "733fa9a1-26b6-490d-b299-21f120b2f53a"
-            }
-        },
-        members: {
-            "cc9b0a0f-655d-45d7-9857-0a61c6bb2c4d": {
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                teamId: "34a1cab1-81f1-47e5-aec3-ab6c9810efe1",
-                status: "member",
-                _createdOn: 1616236790262,
-                _updatedOn: 1616236792930
-            },
-            "61a19986-3b86-4347-8ca4-8c074ed87591": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                teamId: "dc888b1a-400f-47f3-9619-07607966feb8",
-                status: "member",
-                _createdOn: 1616237188183,
-                _updatedOn: 1616237189016
-            },
-            "8a03aa56-7a82-4a6b-9821-91349fbc552f": {
-                _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                teamId: "733fa9a1-26b6-490d-b299-21f120b2f53a",
-                status: "member",
-                _createdOn: 1616237193355,
-                _updatedOn: 1616237195145
-            },
-            "9be3ac7d-2c6e-4d74-b187-04105ab7e3d6": {
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                teamId: "dc888b1a-400f-47f3-9619-07607966feb8",
-                status: "member",
-                _createdOn: 1616237231299,
-                _updatedOn: 1616237235713
-            },
-            "280b4a1a-d0f3-4639-aa54-6d9158365152": {
-                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                teamId: "dc888b1a-400f-47f3-9619-07607966feb8",
-                status: "member",
-                _createdOn: 1616237257265,
-                _updatedOn: 1616237278248
-            },
-            "e797fa57-bf0a-4749-8028-72dba715e5f8": {
-                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                teamId: "34a1cab1-81f1-47e5-aec3-ab6c9810efe1",
-                status: "member",
-                _createdOn: 1616237272948,
-                _updatedOn: 1616237293676
             }
         }
     };
