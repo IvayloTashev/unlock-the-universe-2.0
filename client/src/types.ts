@@ -8,3 +8,21 @@ export interface NasaPodType {
     title: string,
     url: string
 }
+
+export interface PlanetType {
+    _ownerId: string,
+    title: string,
+    image: string,
+    facts: string,
+    introduction: string,
+    namesake: string,
+    potentialForLife: string,
+    orbitAndRotation: string,
+    moons: string,
+    formation: string,
+    structure: string,
+    atmosphere: string,
+    magnetosphere: string,
+    _createdOn: number,
+    _id: string,
+}
