@@ -5,11 +5,17 @@ type Props = {
   image: string;
   children: React.ReactNode;
   title: string;
+  id?: string;
 };
 
-const CardExplore = ({ image, children, title }: Props) => {
+const CardExplore = ({ image, children, title, id }: Props) => {
+  const path = id ? id : title.toLowerCase().replaceAll(" ", "");
+
   return (
-    <Link to={title.toLowerCase().replaceAll(' ','')} className="w-full sm:w-[45%] md:w-[30%] lg:w-[25%] p-5 bg-card rounded-3xl border border-gray-100/20 group transition-all">
+    <Link
+      to={path}
+      className="w-full sm:w-[45%] md:w-[30%] lg:w-[20%] p-5 bg-card rounded-3xl border border-gray-100/20 group transition-all"
+    >
       <div className="flex flex-col items-center gap-5">
         <img
           src={image}
