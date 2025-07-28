@@ -3,7 +3,6 @@ import { useGetPod } from "../../hooks/useGetPod";
 
 const PictureOfTheDay = () => {
   const nasaPodData = useGetPod();
-  console.log(nasaPodData);
 
   return (
     <section>
