@@ -26,3 +26,13 @@ export interface PlanetType {
     _createdOn: number,
     _id: string,
 }
+
+export type PlanetName =
+    | "mercury"
+    | "venus"
+    | "earth"
+    | "mars"
+    | "jupiter"
+    | "saturn"
+    | "uranus"
+    | "neptune";
