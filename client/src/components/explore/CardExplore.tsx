@@ -22,7 +22,7 @@ const CardExplore = ({ image, children, title, id }: Props) => {
           alt={`${image}`}
           className="w-full max-w-[200px] group-hover:scale-110 transition duration-500"
         />
-        <p className="text-white text-center text-3xl sm:text-4xl md:text-5xl font-bebas">
+        <p className="text-white text-center text-3xl sm:text-4xl font-bebas">
           {children}
         </p>
       </div>

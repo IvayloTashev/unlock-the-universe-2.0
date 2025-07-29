@@ -12,7 +12,7 @@ const PictureOfTheDay = () => {
             <img
               src={nasaPodData.url}
               alt="nasaPictureOfTheDay"
-              className="rounded-3xl max-h-[70vh]"
+              className="rounded-3xl max-h-[70vh] border-1 border-gray-100/20"
             />
           </div>
           <div className="text-text-gray text-center p-3 max-w-[90vw] md:max-w-[80vw] bg-card border-1 border-gray-100/20 rounded-3xl">

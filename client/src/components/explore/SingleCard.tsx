@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { useGetOnebyId } from "../../hooks/useSpace";
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
 import { PlanetHeadings } from "../../utils";
-import { motion } from "motion/react";
 
 const SingleCard = () => {
   const { id } = useParams();
@@ -11,7 +10,7 @@ const SingleCard = () => {
 
   return (
     <section className="text-text-gray flex justify-center items-center">
-      <div className="w-[90%] xl:w-[95%] mt-10 flex flex-col gap-10">
+      <div className="w-[90%] xl:w-[95%] mt-10 flex flex-col gap-10 z-10">
         <div className="flex flex-col gap-10 xl:flex-row">
           <div className="flex flex-col">
             <h1 className="mb-4 text-3xl sm:text-4xl font-bold">
@@ -103,7 +102,7 @@ const SingleCard = () => {
 
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-8 right-8 p-3 rounded-full bg-teal-500 text-white shadow-lg hover:scale-115 cursor-pointer animate-bounce"
+        className="fixed bottom-8 right-8 p-3 rounded-full bg-teal-500 text-white shadow-lg hover:scale-115 cursor-pointer animate-bounce z-20"
       >
         ↑
       </button>
