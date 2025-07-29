@@ -25,7 +25,7 @@ const PictureOfTheDay = () => {
           <div>
             <iframe
               src={nasaPodData?.url}
-              title="YouTube video"
+              title="video"
               allowFullScreen
               className="w-full h-full"
             />

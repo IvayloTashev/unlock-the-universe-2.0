@@ -21,13 +21,13 @@ export const useGetAllByType = (name: string) => {
     return spaceData;
 }
 
-export const useGetOnebyId = (name: string, id: string) => {
+export const useGetOnebyId = (id: string) => {
     const [spaceData, setSpaceData] = useState<PlanetType | null>(null);
 
     useEffect(() => {
         (async () => {
             try {
-                const result = await getOnebyId(name, id) as PlanetType;
+                const result = await getOnebyId(id) as PlanetType;
                 setSpaceData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);

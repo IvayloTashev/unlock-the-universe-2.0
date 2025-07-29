@@ -4,4 +4,4 @@ const BASE_URL = `http://localhost:3030/data`;
 
 export const getAllbyType = (name: string) => get(`${BASE_URL}/${name}`);
 
-export const getOnebyId = (name:string, id: string) => get(`${BASE_URL}/${name}/${id}`);
+export const getOnebyId = (id: string) => get(`${BASE_URL}/planets/${id}`);
