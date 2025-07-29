@@ -32,6 +32,21 @@ export const localImages: Record<PlanetName, string> = {
   neptune: neptuneImage,
 };
 
+export const PlanetHeadings = [
+  "Facts",
+  "Introduction",
+  "Namesake",
+  "Potential for Life",
+  "Size and Distance",
+  "Orbit and Rotation",
+  "Moons",
+  "Formation",
+  "Structure",
+  "Surface",
+  "Atmosphere",
+  "Magnetosphere",
+];
+
 // sm - 640px
 // md - 768px
 // lg - 1024px

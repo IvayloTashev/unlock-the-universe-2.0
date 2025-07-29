@@ -24,6 +24,10 @@ ol {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-main: #0B0F1A;
   --color-card: #1A1F2E;
