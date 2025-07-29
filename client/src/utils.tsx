@@ -1,8 +1,9 @@
 import sun from "./assets/sun.png";
-import planetEarth from "./assets/planetEarth.png";
+import solarSystem from "./assets/solar-system.png";
 import astronaut from "./assets/astronaut.png";
 import satellite from "./assets/satellite.png";
 import spaceShuttle from "./assets/space-shuttle.png";
+import sunImage from "./assets/sun.png";
 import mercuryImage from "./assets/mercury.png";
 import venusImage from "./assets/venus.png";
 import earthImage from "./assets/earth.png";
@@ -14,14 +15,14 @@ import neptuneImage from "./assets/neptune.png";
 import type { PlanetName } from "./types";
 
 export const explorePageInfo = [
-  { image: sun, title: "The Sun" },
-  { image: planetEarth, title: "Planets" },
+  { image: solarSystem, title: "Celestial bodies" },
   { image: astronaut, title: "Astronauts" },
   { image: satellite, title: "Satellites" },
   { image: spaceShuttle, title: "Missions" },
 ];
 
 export const localImages: Record<PlanetName, string> = {
+  sun: sunImage,
   mercury: mercuryImage,
   venus: venusImage,
   earth: earthImage,

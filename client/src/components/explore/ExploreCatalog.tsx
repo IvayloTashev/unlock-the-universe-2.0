@@ -12,7 +12,7 @@ const ExploreCatalog = () => {
   return (
     <section className="flex flex-col justify-center items-center">
       <h1 className="font-bebas w-3/4 text-center text-5xl mt-15 text-text-white">
-        Planets
+      Celestial bodies
       </h1>
       <div className="px-15 sm:px-10 md:px-20 mt-10 flex flex-wrap justify-center gap-5">
         {planetsData?.map((item) => {

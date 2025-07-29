@@ -30,6 +30,7 @@ export interface PlanetType {
 }
 
 export type PlanetName =
+    | "sun"
     | "mercury"
     | "venus"
     | "earth"
