@@ -1521,6 +1521,98 @@
             }
         },
 
+        astronauts: {
+            "ac4cbb29-3049-4985-a58a-f2c88e560d8e": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "Yuri Gagarin",
+                "image": "https://i0.wp.com/opinion.premiumtimesng.com/wp-content/files/sites/2/2017/04/yuri-gagarin.jpg",
+                "description": "In 1955, Soviet cosmonaut Yuri Gagarin was chosen by the Soviets for mankind’s first trip to space due to his impressive record as a fighter pilot in the military. Six years later, Gagarin would take a flight 203 miles above the earth, making him the first person to go into space.  His first words, the first ever spoken by a human in space, were, “I see the earth. It’s so beautiful!” The trip to space was bigger than Gagarin, of course, and bigger than the Soviet Union too. It was an achievement for all mankind. Yet, it wouldn’t have been possible without Gagarin’s technical ability and bravery. Sadly, Gagarin would die during a routine training exercise just seven years after his trip to space. ",
+                "_createdOn": 1753976195716,
+                "_id": "ac4cbb29-3049-4985-a58a-f2c88e560d8e"
+            },
+
+            "028c5801-28b1-4325-891c-a73fb760af47": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "Neil Armstrong",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Neil_Armstrong_pose.jpg",
+                "description": "Neil Armstrong is arguably the most famous astronaut that ever lived. The Ohio-born astronaut became famous the world over in 1969 when he became the first man to walk on the moon. His iconic words, “that’s one small step for man, one giant leap for mankind,” are some of the most famous in history.  Armstrong’s journey to the moon took around four days, but the overall mission took around eight years. In 1961, President Kennedy promised the nation that he’d put a man on the moon by the end of the 1960s — a feat they managed to pull off just in time. In total, Armstrong spent more than twenty-one hours on the moon’s surface, collecting samples, deploying instruments, taking photographs, and, famously, planting an American flag. The astronaut led a relatively quiet life after returning to earth, spending the rest of his career teaching and working for aviation companies. He died in 2012.",
+                "_createdOn": 1753976276773,
+                "_id": "028c5801-28b1-4325-891c-a73fb760af47"
+            },
+
+            "f3e5ac8b-fcd7-42de-82f5-33e79390847f": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "Alan Shepard",
+                "image": "https://m.media-amazon.com/images/M/MV5BY2M1NGIyNzEtY2M2ZC00MjZjLWI3N2UtMWYxYjVjYzY3YzFiXkEyXkFqcGc@._V1_.jpg",
+                "description": "Born in 1923, Nasa Astronaut Alan Shepard was the first American in space. After WWII, Alan Shepard went back to school and became a test pilot. He is famous for being one of only 12 individuals who also walked on the moon. Alan Shepard was involved in 2 space missions, and famously was the first person to hit a golf ball on the moon.",
+                "_createdOn": 1753976327085,
+                "_id": "f3e5ac8b-fcd7-42de-82f5-33e79390847f"
+            },
+
+            "efae3bc8-646b-47e3-91f5-d6798623115c": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "Buzz Aldrin",
+                "image": "https://static.wikia.nocookie.net/timeless8259/images/f/f5/Real_Aldrin.png/revision/latest/thumbnail/width/360/height/360?cb=20170508103152",
+                "description": "Nasa astronaut Buzz Aldrin isn’t as famous as his colleague Neil Armstrong, but anyone with even a passing interest in space exploration knows his name. He stepped onto the moon around twenty minutes after Armstrong during the famous Apollo 11 mission. In many ways, Buzz Aldrin was more accomplished than Armstrong. He’d been on more NASA missions and spent more time in space — nearly 300 hours in total. Aldrin’s post-moon life has been filled with celebrity appearances and space advocacy, though he also engaged in regular jobs, such as selling cars, after leaving NASA in 1971. ",
+                "_createdOn": 1753976408265,
+                "_id": "efae3bc8-646b-47e3-91f5-d6798623115c"
+            },
+
+            "13959550-fd10-4327-8ed4-1c8a118b16e9": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "John Glenn",
+                "image": "https://static01.nyt.com/images/2013/06/11/obituaries/Glenn-John-obit-slide-PCW2/Glenn-John-obit-slide-PCW2-superJumbo.jpg?quality=75&auto=webp&disable=upscale",
+                "description": "John Glenn was one of the most American astronaut heroes. In 1962, he became the first American to orbit the earth — he travelled around the world three times in five hours aboard the Friendship 7 spacecraft. It was far from his foray into the exciting world of altitude travel. Five years before he became the first American to orbit the earth, Glenn became the first person to travel across the American continent at supersonic speeds. During that trip, a start of the art attached to the aircraft captured the first panoramic image of the United States. His success prompted NASA to draft him as part of ‘Mercury Seven,’ which was the first gathering of astronauts in the country. Most people would be content to rest on their laurels after a trip around earth’s orbit, but not Glenn. In 1974, he was elected to the U.S. Senate — the first astronaut to become a senator — and then, in 1998, he became the oldest person to take a spaceflight at the age of 77.",
+                "_createdOn": 1753976951745,
+                "_id": "13959550-fd10-4327-8ed4-1c8a118b16e9"
+            },
+
+            "a52cc475-02de-45ef-9ebc-1fe2dda8a5fc": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "Valentina Tereshkova",
+                "image": "https://bulgaria.mid.ru/upload/iblock/dcd/jiv5lus72lmjmhdk02urc0htgeo5eofu.jpg",
+                "description": "Our list so far has not included female astronauts. It’s true that space travel has been a largely male-dominated profession in the past. Valentina Tereshkova became the first woman to go into space on June 16th, 1963. She had been selected the year previously by the Russian Space Federation, which wanted to put the first woman in space. During her trip, Tereshkova orbited earth forty-eight times, taking photographs and keeping a flight log, which helped to aid future missions.That was Tereshkova’s first and only trip to space, but she stayed active within the space industry after her brief stint as an astronaut came to an end, working as a cosmonaut engineer before moving into politics.",
+                "_createdOn": 1753977150018,
+                "_id": "a52cc475-02de-45ef-9ebc-1fe2dda8a5fc"
+            },
+
+            "2ef0123f-fb20-45ea-aea9-45c56d6a4844": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "Sally Ride",
+                "image": "https://static01.nyt.com/images/2012/07/24/science/24ride1/24ride1-jumbo.jpg?quality=75&auto=webp",
+                "description": "It took a while for the Americans to put a woman in space. By 1982, the Russians had done it twice, with Svetlana Savitskaya making a foray into outer orbit nineteen years after Valentina Tereshkova.  It wasn’t long before America decided to send a woman on a space shuttle, however. And there weren’t too many people who were better suited for the job than Sally Ride, a PhD graduate from Stanford University who joined NASA in 1978. Sally Ride was the first American woman and the first LGBTQIA+ person in space.  Her trip to space got underway on June 18th, 1983, as part of the STS-7 mission on the Challenger along with five other astronauts. Her second space trip occurred a year later, also aboard the Challenger. The Space Shuttle Challenger disaster put all space trips on hold, and Ride wasn’t able to go on any further mission. She retired from NASA in 1987 and worked as a physics professor and a vocal advocate for Stem education. Ride would stay in the public eye, however, as a key part of both the 1986 and 2003 investigations into the Challenger disaster.",
+                "_createdOn": 1753977276734,
+                "_id": "2ef0123f-fb20-45ea-aea9-45c56d6a4844"
+            },
+
+            "f294c212-4b58-4d50-98da-e02fe27e667b": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "Chris Hadfield",
+                "image": "https://chartwellspeakers.b-cdn.net/wp-content/uploads/2024/09/chris-1.jpeg",
+                "description": "Chris Hadfield is arguably the most famous astronaut after Neil Armstrong. Hadfield is a highly accomplished astronaut who has been involved in multiple successful space missions. What made him famous and grew a large fan base was his fantastic use of the social media. His musical performances aboard the International Space Station have accrued millions of views. His two most famous performances include a collaboration with Ed Robertston (of Barenaked Ladies fame) on a performance of ‘Is Somebody Singing?’ and his solo rendition of David Bowie’s classic universe-friendly track, ‘Space Oddity.’Hadfield is far and away Canada’s most famous astronaut, which is reflected by his long list of honours. Among his collection is the Order of Canada, NASA Exceptional Service Medal, Queen’s Jubilee Medal, and the Queen’s Diamond Jubilee Medal. ",
+                "_createdOn": 1753977383799,
+                "_id": "f294c212-4b58-4d50-98da-e02fe27e667b"
+            },
+
+            "8bf31953-0eb4-46d1-a8ed-0d25e7d2ba81": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "Christa McAuliffe",
+                "image": "https://www.arabamerica.com/wp-content/uploads/2015/05/Christa-Mcauliffe.jpg",
+                "description": "Christa McAuliffe is a famous name in the world of space travel. Unfortunately, while she should be celebrated for becoming the first American civilian to take a trip to space, she is instead known as one of the seven people that died during the Challenger disaster in 1986. NASA planned to send a teacher into space as a way to generate interest in space travel among the public. More than 10,000 people applied for the position, with McAuliffe eventually becoming successful. Alas, the dream turned into a nightmare on January 28th, 1986, when the Challenger spacecraft broke apart shortly after takeoff, killing all crew members. Since her death, McAuliffe’s name has been used for numerous scholarships, prizes, and schools, ensuring that her legacy lives on after death.",
+                "_createdOn": 1753977826702,
+                "_id": "8bf31953-0eb4-46d1-a8ed-0d25e7d2ba81"
+            },
+
+            "81f924d4-6711-45dd-88df-75646e0c5d74": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "name": "Mae Jemison",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Mae_Carol_Jemison.jpg",
+                "description": "Former Nasa astronaut, physician, author, chemical engineer and futurist Mae Jemison is another significant figure in the history of space travel. In 1992, she became the first woman of colour successfully orbiting earth 127 times over an eight-day period. It was the beginning of a fruitful public life for Jemison, who went on to write children’s books and also appeared in an episode of Star Trek. She would later be inducted into the National Women’s Hall of Fame and the International Space Hall of Fame.",
+                "_createdOn": 1753977901042,
+                "_id": "81f924d4-6711-45dd-88df-75646e0c5d74"
+            }
+        },
+
         posts: {
             "c25eae2c-10c7-4190-b628-470309e2b8d3": {
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
