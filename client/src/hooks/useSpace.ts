@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react"
-import type { PlanetType } from "../types";
-import { getAllbyType, getOnebyId } from "../api/sapeAPI";
+import type { AstronautType, CelestialBodyType } from "../types";
+import { getAllAstronauts, getAllCelestialBodies, getAstronautbyId, getCelestialBodybyId } from "../api/sapeceAPI";
 
-
-export const useGetAllByType = (name: string) => {
-    const [spaceData, setSpaceData] = useState<PlanetType[] | null>(null);
+//CelestialBodies
+export const useGetAllCelestialBodies = () => {
+    const [spaceData, setSpaceData] = useState<CelestialBodyType[] | null>(null);
 
     useEffect(() => {
         (async () => {
 
             try {
-                const result = await getAllbyType(name) as PlanetType[];
+                const result = await getAllCelestialBodies() as CelestialBodyType[];
                 setSpaceData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
@@ -21,13 +21,13 @@ export const useGetAllByType = (name: string) => {
     return spaceData;
 }
 
-export const useGetOnebyId = (id: string) => {
-    const [spaceData, setSpaceData] = useState<PlanetType | null>(null);
+export const useGetCelestialBodybyId = (id: string) => {
+    const [spaceData, setSpaceData] = useState<CelestialBodyType | null>(null);
 
     useEffect(() => {
         (async () => {
             try {
-                const result = await getOnebyId(id) as PlanetType;
+                const result = await getCelestialBodybyId(id) as CelestialBodyType;
                 setSpaceData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
@@ -36,4 +36,40 @@ export const useGetOnebyId = (id: string) => {
     }, []);
 
     return spaceData;
+}
+
+//Astronauts
+export const useGetAllAstronauts = () => {
+    const [astronautsData, setAstronautsDataData] = useState<AstronautType[] | null>(null);
+
+    useEffect(() => {
+        (async () => {
+
+            try {
+                const result = await getAllAstronauts() as AstronautType[];
+                setAstronautsDataData(result);
+            } catch (err) {
+                console.error("Error fetching data:", err);
+            }
+        })();
+    }, []);
+
+    return astronautsData;
+}
+
+export const useGetAstronautbyId = (id: string) => {
+    const [astronautsData, setAstronautsDataData] = useState<AstronautType | null>(null);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const result = await getAstronautbyId(id) as AstronautType;
+                setAstronautsDataData(result);
+            } catch (err) {
+                console.error("Error fetching data:", err);
+            }
+        })();
+    }, []);
+
+    return astronautsData;
 }

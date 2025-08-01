@@ -9,7 +9,7 @@ export interface NasaPodType {
     url: string
 }
 
-export interface PlanetType {
+export interface CelestialBodyType {
     _ownerId: string,
     title: string,
     image: string,
@@ -25,6 +25,15 @@ export interface PlanetType {
     surface: string,
     atmosphere: string,
     magnetosphere: string,
+    _createdOn: number,
+    _id: string,
+}
+
+export interface AstronautType {
+    _ownerId: string,
+    title: string,
+    image: string,
+    description: string,
     _createdOn: number,
     _id: string,
 }
