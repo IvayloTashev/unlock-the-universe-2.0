@@ -1,11 +1,11 @@
 import React from "react";
 import CardExplore from "../CardExplore";
 import { localImages } from "../../../utils";
-import { useGetAllByType } from "../../../hooks/useSpace";
+import { useGetAllCelestialBodies } from "../../../hooks/useSpace";
 import type { PlanetName } from "../../../types";
 
 const CelestialBodiesCatalog = () => {
-  const planetsData = useGetAllByType("celestialbodies");
+  const planetsData = useGetAllCelestialBodies();
 
   return (
     <section className="flex flex-col justify-center items-center">
@@ -15,7 +15,7 @@ const CelestialBodiesCatalog = () => {
       <div className="px-15 sm:px-10 md:px-20 mt-10 flex flex-wrap justify-center gap-5">
         {planetsData?.map((item) => {
           const key = item.title.toLowerCase() as PlanetName;
-		  const image = localImages[key] ?? item.image;
+		      const image = localImages[key] ?? item.image;
 
           return (
             <CardExplore key={item.title} image={image} title={item.title} id={item._id}>

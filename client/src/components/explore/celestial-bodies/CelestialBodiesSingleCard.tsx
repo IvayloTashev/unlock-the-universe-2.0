@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useGetOnebyId } from "../../../hooks/useSpace";
+import { useGetCelestialBodybyId } from "../../../hooks/useSpace";
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
 import { PlanetHeadings } from "../../../utils";
 
 const CelestialBodiesSingleCard = () => {
   const { id } = useParams();
-  const planetData = useGetOnebyId(id!);
+  const planetData = useGetCelestialBodybyId(id!);
 
   return (
     <section className="text-text-gray flex justify-center items-center">
