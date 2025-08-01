@@ -3,8 +3,9 @@ import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Explore from "./components/explore/Explore";
 import PictureOfTheDay from "./components/picture-of-the-day/PictureOfTheDay";
-import ExploreCatalog from "./components/explore/ExploreCatalog";
-import SingleCard from "./components/explore/SingleCard";
+import CelestialBodiesCatalog from "./components/explore/celestial-bodies/CelestialBodiesCatalog";
+import CelestialBodiesSingleCard from "./components/explore/celestial-bodies/CelestialBodiesSingleCard";
+import AstronautsCatalog from "./components/explore/astronauts/AstronautsCatalog";
 
 function App() {
   return (
@@ -12,9 +13,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Hero />} />
+
         <Route path="/explore" element={<Explore />} />
-        <Route path="/explore/:title" element={<ExploreCatalog />} />
-        <Route path="/explore/:title/:id" element={<SingleCard />} />
+
+        <Route path="/explore/celestialbodies" element={<CelestialBodiesCatalog />} />
+        <Route path="/explore/celestialbodies/:id" element={<CelestialBodiesSingleCard />} />
+
+        <Route path="/explore/astronauts" element={<AstronautsCatalog/>} />
+
         <Route path="/picture-of-the-day" element={<PictureOfTheDay />} />
       </Routes>
     </>

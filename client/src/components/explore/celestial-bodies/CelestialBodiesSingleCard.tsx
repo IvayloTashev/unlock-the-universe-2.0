@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useGetOnebyId } from "../../hooks/useSpace";
+import { useGetOnebyId } from "../../../hooks/useSpace";
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
-import { PlanetHeadings } from "../../utils";
+import { PlanetHeadings } from "../../../utils";
 
-const SingleCard = () => {
+const CelestialBodiesSingleCard = () => {
   const { id } = useParams();
   const planetData = useGetOnebyId(id!);
 
@@ -111,4 +111,4 @@ const SingleCard = () => {
   );
 };
 
-export default SingleCard;
+export default CelestialBodiesSingleCard;

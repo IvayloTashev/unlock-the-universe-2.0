@@ -1,13 +1,11 @@
 import React from "react";
-import CardExplore from "./CardExplore";
-import { localImages } from "../../utils";
-import { useParams } from "react-router-dom";
-import { useGetAllByType } from "../../hooks/useSpace";
-import type { PlanetName } from "../../types";
+import CardExplore from "../CardExplore";
+import { localImages } from "../../../utils";
+import { useGetAllByType } from "../../../hooks/useSpace";
+import type { PlanetName } from "../../../types";
 
-const ExploreCatalog = () => {
-  const { title } = useParams();
-  const planetsData = useGetAllByType(title!);
+const CelestialBodiesCatalog = () => {
+  const planetsData = useGetAllByType("celestialbodies");
 
   return (
     <section className="flex flex-col justify-center items-center">
@@ -30,4 +28,4 @@ const ExploreCatalog = () => {
   );
 };
 
-export default ExploreCatalog;
+export default CelestialBodiesCatalog;
