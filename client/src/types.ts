@@ -38,6 +38,15 @@ export interface AstronautType {
     _id: string,
 }
 
+export interface MissionType {
+    _ownerId: string,
+    name: string,
+    image: string,
+    description: string,
+    _createdOn: number,
+    _id: string,
+}
+
 export type PlanetName =
     | "sun"
     | "mercury"

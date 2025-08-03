@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import type { AstronautType, CelestialBodyType } from "../types";
-import { getAllAstronauts, getAllCelestialBodies, getAstronautbyId, getCelestialBodybyId } from "../api/sapeceAPI";
+import type { AstronautType, CelestialBodyType, MissionType } from "../types";
+import { getAllAstronauts, getAllCelestialBodies, getAllMissions, getAstronautById, getCelestialBodybyId, getMissionById } from "../api/sapeceAPI";
 
 //CelestialBodies
 export const useGetAllCelestialBodies = () => {
@@ -40,14 +40,14 @@ export const useGetCelestialBodybyId = (id: string) => {
 
 //Astronauts
 export const useGetAllAstronauts = () => {
-    const [astronautsData, setAstronautsDataData] = useState<AstronautType[] | null>(null);
+    const [astronautsData, setAstronautsData] = useState<AstronautType[] | null>(null);
 
     useEffect(() => {
         (async () => {
 
             try {
                 const result = await getAllAstronauts() as AstronautType[];
-                setAstronautsDataData(result);
+                setAstronautsData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
             }
@@ -57,14 +57,14 @@ export const useGetAllAstronauts = () => {
     return astronautsData;
 }
 
-export const useGetAstronautbyId = (id: string) => {
-    const [astronautsData, setAstronautsDataData] = useState<AstronautType | null>(null);
+export const useGetAstronautById = (id: string) => {
+    const [astronautsData, setAstronautsData] = useState<AstronautType | null>(null);
 
     useEffect(() => {
         (async () => {
             try {
-                const result = await getAstronautbyId(id) as AstronautType;
-                setAstronautsDataData(result);
+                const result = await getAstronautById(id) as AstronautType;
+                setAstronautsData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
             }
@@ -72,4 +72,40 @@ export const useGetAstronautbyId = (id: string) => {
     }, []);
 
     return astronautsData;
+}
+
+//Missions
+export const useGetAllMissions = () => {
+    const [missionsData, setMissionsData] = useState<MissionType[] | null>(null);
+
+    useEffect(() => {
+        (async () => {
+
+            try {
+                const result = await getAllMissions() as MissionType[];
+                setMissionsData(result);
+            } catch (err) {
+                console.error("Error fetching data:", err);
+            }
+        })();
+    }, []);
+
+    return missionsData;
+}
+
+export const useGetMissionById = (id: string) => {
+    const [missionsData, setMissionsData] = useState<MissionType | null>(null);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const result = await getMissionById(id) as MissionType;
+                setMissionsData(result);
+            } catch (err) {
+                console.error("Error fetching data:", err);
+            }
+        })();
+    }, []);
+
+    return missionsData;
 }

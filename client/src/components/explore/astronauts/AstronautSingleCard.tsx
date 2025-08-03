@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useGetAstronautbyId } from "../../../hooks/useSpace";
+import { useGetAstronautById } from "../../../hooks/useSpace";
 import { motion } from "motion/react";
 import astronaut2 from "../../../assets/astronaut-2.png";
 import moon from "../../../assets/moon.png";
@@ -8,7 +8,7 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 
 const AstronautSingleCard = () => {
   const { id } = useParams();
-  const astronautData = useGetAstronautbyId(id!);
+  const astronautData = useGetAstronautById(id!);
   const isAbove2xl = useMediaQuery("(min-width: 1536px)");
 
   return (
