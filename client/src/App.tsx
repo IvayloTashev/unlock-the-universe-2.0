@@ -6,6 +6,7 @@ import PictureOfTheDay from "./components/picture-of-the-day/PictureOfTheDay";
 import CelestialBodiesCatalog from "./components/explore/celestial-bodies/CelestialBodiesCatalog";
 import CelestialBodiesSingleCard from "./components/explore/celestial-bodies/CelestialBodiesSingleCard";
 import AstronautsCatalog from "./components/explore/astronauts/AstronautsCatalog";
+import AstronautSingleCard from "./components/explore/astronauts/AstronautSingleCard";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/explore/celestialbodies" element={<CelestialBodiesCatalog />} />
         <Route path="/explore/celestialbodies/:id" element={<CelestialBodiesSingleCard />} />
 
-        <Route path="/explore/astronauts" element={<AstronautsCatalog/>} />
+        <Route path="/explore/astronauts" element={<AstronautsCatalog />} />
+        <Route path="/explore/astronauts/:id" element={<AstronautSingleCard />} />
 
         <Route path="/picture-of-the-day" element={<PictureOfTheDay />} />
       </Routes>
