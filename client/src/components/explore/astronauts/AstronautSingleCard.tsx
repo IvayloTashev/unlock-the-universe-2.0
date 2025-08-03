@@ -14,7 +14,10 @@ const AstronautSingleCard = () => {
   return (
     <section className="min-h-screen text-text-gray py-16 px-4 relative">
       {isAbove2xl ? (
-        <img
+        <motion.img
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
           src={astronaut2}
           alt="astronaut-image"
           className="absolute top-0 left-0 max-w-[400px]"
@@ -24,7 +27,10 @@ const AstronautSingleCard = () => {
       )}
 
       {isAbove2xl ? (
-        <img
+        <motion.img
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
           src={moon}
           alt="astronaut-image"
           className="absolute top-100 right-0 max-w-[400px]"
