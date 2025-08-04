@@ -1662,7 +1662,7 @@
             "c947e64b-7308-471c-bf59-e6427149a84e": {
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 "name": "Spitzer",
-                "image": "https://www.spitzer.caltech.edu/system/articles/images/1898/original/feature16-13_Rec.jpg?1596837250",
+                "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/05/hd_spitzer_side_visible.jpg",
                 "description": "Another spacecraft with a profound effect on cosmologyand astrophysics is the Spitzer Space Telescope, which observed the heavensthrough infrared light. This light, which has a longer wavelength than visuallight, is mostly blocked by Earth's atmosphere. In addition to takinggorgeous photos of galaxies, nebulae and stars, the telescope has madenumerous groundbreaking scientific discoveries. In 2005 Spitzer became thefirst telescope to detect light from extrasolar planets (most of these distantworlds are detected only through secondary, gravitational effects on theirsuns). In another observation, astronomers think the telescope may have evencaptured light from some of the first stars born in the universe.",
                 "_createdOn": 1753984422170,
                 "_id": "c947e64b-7308-471c-bf59-e6427149a84e"
