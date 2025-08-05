@@ -17,7 +17,6 @@ import type { PlanetName } from "./types";
 export const explorePageInfo = [
   { image: solarSystem, title: "Celestial bodies" },
   { image: astronaut, title: "Astronauts" },
-  { image: satellite, title: "Satellites" },
   { image: spaceShuttle, title: "Missions" },
 ];
 
