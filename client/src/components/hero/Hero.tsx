@@ -1,8 +1,6 @@
 import React from "react";
-import solarSystem from "../../assets/solar-system.png";
-import solarSystem2 from "../../assets/solar-system2.png";
-import solarSystem3 from "../../assets/solar-system3.png";
-import skyWithStars from "../../assets/skyWithStars.png";
+import skyWithStars2 from "../../assets/skyWithStars2.png";
+import homeBackground from "../../assets/homeBackground.png";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import HeroText from "./HeroText";
 
@@ -13,18 +11,21 @@ const Hero = () => {
     <section>
       {isAboveMediumScreen ? (
         <div className="h-screen overflow-hidden">
-          <img src={solarSystem2} alt="solarSystem" className="w-full object-cover opacity-60" />
+          <img
+            src={homeBackground}
+            alt="solarSystem"
+            className="w-full h-full object-cover opacity-40"
+          />
           <HeroText position="top-2/5" />
         </div>
       ) : (
         <div className="relative">
-          <img src={skyWithStars} alt="skyWithStars" className="opacity-40" />
           <img
-            src={solarSystem3}
-            alt="solarSystem"
-            className="absolute top-80 mx-auto sm:mt-15 opacity-70"
+            src={skyWithStars2}
+            alt="skyWithStars"
+            className="w-full object-cover opacity-40"
           />
-          <HeroText position="top-1/2" />
+          <HeroText position="top-[40%]" />
         </div>
       )}
     </section>
