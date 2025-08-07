@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetPod } from "../../hooks/useGetPod";
+import { useGetPod } from "../../../hooks/useGetPod";
 
 const PictureOfTheDay = () => {
   const nasaPodData = useGetPod();

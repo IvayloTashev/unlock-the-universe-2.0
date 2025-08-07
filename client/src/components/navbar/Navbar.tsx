@@ -24,10 +24,6 @@ const Navbar = () => {
               <Link to={"/explore"}>
                 <p className={`${linkStyle}`}>Explore</p>
               </Link>
-
-              <Link to="/picture-of-the-day">
-                <p className={`${linkStyle}`}>POD</p>
-              </Link>
             </div>
 
             <div className="flex gap-8">
@@ -60,10 +56,6 @@ const Navbar = () => {
                 <div className="flex flex-col justify-center items-center gap-8 mt-10">
                   <Link to={"/explore"} onClick={() => setIsMenuToggled(false)}>
                     <p className={`${linkStyle}`}>Explore</p>
-                  </Link>
-
-                  <Link to="/picture-of-the-day" onClick={() => setIsMenuToggled(false)}>
-                    <p className={`${linkStyle}`}>POD</p>
                   </Link>
 
                   <Link to="/signup" onClick={() => setIsMenuToggled(false)}>
