@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FunFacts from "./funFacts";
 
 type Props = {
   position: string;
@@ -7,13 +8,18 @@ type Props = {
 
 const HeroText = ({ position }: Props) => {
   return (
-    <div className={`${position} absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 sm:w-3/5 font-bebas text-white flex flex-col justify-center items-center gap-1`}>
-      <p className="text-teal-500 text-3xl sm:text-4xl text-shadow-sm text-shadow-teal-500">Journey Begins Here</p>
+    <div
+      className={`${position} absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 sm:w-3/5 mt-10 font-bebas text-white flex flex-col justify-center items-center gap-1`}
+    >
+      <p className="text-teal-500 text-3xl sm:text-4xl text-shadow-sm text-shadow-teal-500">
+        Journey Begins Here
+      </p>
       <h2 className="text-center text-4xl sm:text-5xl md:text-6xl text-shadow-sm text-shadow-teal-500">
         Unlock the Secrets of the Solar System
       </h2>
       <p className="text-center font-manrope text-xl md:text-2xl text-gray-300 max-w-[600px] mt-2">
-        Dive into the cosmos and discover planets, astronauts, and space missions like never before.
+        Dive into the cosmos and discover planets, astronauts, and space
+        missions like never before.
       </p>
       <Link
         to="/explore"
@@ -21,6 +27,7 @@ const HeroText = ({ position }: Props) => {
       >
         <p className="bg-black rounded-3xl px-5 py-1 h-full w-full">Explore</p>
       </Link>
+      <FunFacts />
     </div>
   );
 };
