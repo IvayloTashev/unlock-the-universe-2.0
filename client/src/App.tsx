@@ -10,6 +10,7 @@ import MissionsCatalog from "./components/explore/missions/MissionsCatalog";
 import MissionSingleCard from "./components/explore/missions/MissionSingleCard";
 import PictureOfTheDay from "./components/explore/picture-of-the-day/PictureOfTheDay";
 import Register from "./components/register/Register";
+import LogIn from "./components/signup/LogIn";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/explore/pictureoftheday" element={<PictureOfTheDay />} />
 
         <Route path="/register" element={<Register/> } />
+        <Route path="/login" element={<LogIn/> } />
 
       </Routes>
     </>
