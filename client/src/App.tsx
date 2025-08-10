@@ -9,6 +9,7 @@ import AstronautSingleCard from "./components/explore/astronauts/AstronautSingle
 import MissionsCatalog from "./components/explore/missions/MissionsCatalog";
 import MissionSingleCard from "./components/explore/missions/MissionSingleCard";
 import PictureOfTheDay from "./components/explore/picture-of-the-day/PictureOfTheDay";
+import Register from "./components/register/Register";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         <Route path="/explore/missions/:id" element={<MissionSingleCard />} />
 
         <Route path="/explore/pictureoftheday" element={<PictureOfTheDay />} />
+
+        <Route path="/register" element={<Register/> } />
+
       </Routes>
     </>
   );

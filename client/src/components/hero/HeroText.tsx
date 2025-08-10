@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FunFacts from "./funFacts";
+import FunFacts from "./FunFacts";
+
 
 type Props = {
   position: string;
