@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import BackgroundCircles from "./BackgroundCircles";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width: 768px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
@@ -27,8 +28,8 @@ const Navbar = () => {
             </div>
 
             <div className="flex gap-8">
-              <Link to="/signup">
-                <p className={`${linkStyle}`}>Sign Up</p>
+              <Link to="/login">
+                <p className={`${linkStyle}`}>Log in</p>
               </Link>
 
               <Link to="/register">
@@ -58,8 +59,8 @@ const Navbar = () => {
                     <p className={`${linkStyle}`}>Explore</p>
                   </Link>
 
-                  <Link to="/signup" onClick={() => setIsMenuToggled(false)}>
-                    <p className={`${linkStyle}`}>Sign Up</p>
+                  <Link to="/login" onClick={() => setIsMenuToggled(false)}>
+                    <p className={`${linkStyle}`}>Log In</p>
                   </Link>
 
                   <Link to="/register" onClick={() => setIsMenuToggled(false)}>

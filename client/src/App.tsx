@@ -10,7 +10,7 @@ import MissionsCatalog from "./components/explore/missions/MissionsCatalog";
 import MissionSingleCard from "./components/explore/missions/MissionSingleCard";
 import PictureOfTheDay from "./components/explore/picture-of-the-day/PictureOfTheDay";
 import Register from "./components/register/Register";
-import LogIn from "./components/signup/LogIn";
+import LogIn from "./components/login/LogIn";
 
 function App() {
   return (
