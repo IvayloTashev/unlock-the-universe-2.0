@@ -24,7 +24,7 @@ const Register = () => {
               <input
                 type="text"
                 placeholder="Username"
-                className="p-2 outline-none"
+                className="p-2 outline-none w-[95%]"
               />
               <UserIcon className="w-5 text-indigo-300" />
             </div>
@@ -33,7 +33,7 @@ const Register = () => {
               <input
                 type="text"
                 placeholder="Email"
-                className="p-2 outline-none"
+                className="p-2 outline-none w-[95%]"
               />
               <EnvelopeIcon className="w-5 text-indigo-300" />
             </div>
@@ -42,7 +42,7 @@ const Register = () => {
               <input
                 type="password"
                 placeholder="Password"
-                className="p-2 outline-none"
+                className="p-2 outline-none w-[95%]"
               />
               <LockClosedIcon className="w-5 text-indigo-300" />
             </div>
@@ -51,7 +51,7 @@ const Register = () => {
               <input
                 type="password"
                 placeholder="Repeat Password"
-                className="p-2 outline-none"
+                className="p-2 outline-none w-[95%]"
               />
               <LockClosedIcon className="w-5 text-indigo-300" />
             </div>
