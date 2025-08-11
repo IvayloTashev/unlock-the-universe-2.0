@@ -11,31 +11,53 @@ import MissionSingleCard from "./components/explore/missions/MissionSingleCard";
 import PictureOfTheDay from "./components/explore/picture-of-the-day/PictureOfTheDay";
 import Register from "./components/register/Register";
 import LogIn from "./components/login/LogIn";
+import { AuthContextProvider } from "./contexts/AuthContext";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Hero />} />
+      <AuthContextProvider>
+        <header>
+          <Navbar />
+        </header>
 
-        <Route path="/explore" element={<Explore />} />
+        <main>
+          <Routes>
+            <Route path="/" element={<Hero />} />
 
-        <Route path="/explore/celestialbodies" element={<CelestialBodiesCatalog />} />
-        <Route path="/explore/celestialbodies/:id" element={<CelestialBodiesSingleCard />} />
+            <Route path="/explore" element={<Explore />} />
 
-        <Route path="/explore/astronauts" element={<AstronautsCatalog />} />
-        <Route path="/explore/astronauts/:id" element={<AstronautSingleCard />} />
+            <Route
+              path="/explore/celestialbodies"
+              element={<CelestialBodiesCatalog />}
+            />
+            <Route
+              path="/explore/celestialbodies/:id"
+              element={<CelestialBodiesSingleCard />}
+            />
 
-        <Route path="/explore/missions" element={<MissionsCatalog />} />
-        <Route path="/explore/missions/:id" element={<MissionSingleCard />} />
+            <Route path="/explore/astronauts" element={<AstronautsCatalog />} />
+            <Route
+              path="/explore/astronauts/:id"
+              element={<AstronautSingleCard />}
+            />
 
-        <Route path="/explore/pictureoftheday" element={<PictureOfTheDay />} />
+            <Route path="/explore/missions" element={<MissionsCatalog />} />
+            <Route
+              path="/explore/missions/:id"
+              element={<MissionSingleCard />}
+            />
 
-        <Route path="/register" element={<Register/> } />
-        <Route path="/login" element={<LogIn/> } />
+            <Route
+              path="/explore/pictureoftheday"
+              element={<PictureOfTheDay />}
+            />
 
-      </Routes>
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<LogIn />} />
+          </Routes>
+        </main>
+      </AuthContextProvider>
     </>
   );
 }

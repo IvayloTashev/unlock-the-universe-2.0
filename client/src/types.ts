@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface NasaPodType {
     copyright?: string,
     date: string,
@@ -57,3 +59,23 @@ export type PlanetName =
     | "saturn"
     | "uranus"
     | "neptune";
+
+
+export interface AuthState {
+    _id?: string;
+    email?: string;
+    accessToken?: string;
+}
+
+export interface AuthContextType {
+    userId?: string;
+    email?: string;
+    accessToken?: string;
+    isAuthenticated: boolean;
+    changeAuthState: (state: AuthState) => void;
+    localLogout: () => void;
+}
+
+export interface AuthProviderProps {
+    children: ReactNode;
+}
