@@ -12,6 +12,7 @@ import PictureOfTheDay from "./components/explore/picture-of-the-day/PictureOfTh
 import Register from "./components/register/Register";
 import LogIn from "./components/login/LogIn";
 import { AuthContextProvider } from "./contexts/AuthContext";
+import Logout from "./components/logout/Logout";
 
 function App() {
   return (
@@ -55,6 +56,8 @@ function App() {
 
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<LogIn />} />
+            <Route path="/logout" element={<Logout />} />
+            
           </Routes>
         </main>
       </AuthContextProvider>

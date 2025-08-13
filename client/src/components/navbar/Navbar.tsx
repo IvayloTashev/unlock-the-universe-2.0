@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import navIcon from "../../assets/navIcon.png";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import BackgroundCircles from "./BackgroundCircles";
 import { Link } from "react-router-dom";
-
+import { useAuthContext } from "../../contexts/AuthContext";
 
 const Navbar = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width: 768px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
 
-  const linkStyle = "hover:text-teal-500 hover:scale-110 transition duration-500";
+  const { isAuthenticated } = useAuthContext();
+
+  const linkStyle =
+    "hover:text-teal-500 hover:scale-110 transition duration-500";
 
   return (
     <nav className="bg-card text-text-gray text-2xl font-bebas px-6 border-b-1 border-gray-100/20">
@@ -27,48 +30,69 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <div className="flex gap-8">
-              <Link to="/login">
-                <p className={`${linkStyle}`}>Log in</p>
-              </Link>
+            {!isAuthenticated ? (
+              <div className="flex gap-8">
+                <Link to="/login">
+                  <p className={`${linkStyle}`}>Log in</p>
+                </Link>
 
-              <Link to="/register">
-                <p className={`${linkStyle}`}>Register</p>
+                <Link to="/register">
+                  <p className={`${linkStyle}`}>Register</p>
+                </Link>
+              </div>
+            ) : (
+              <Link to="/logout">
+                <p className={`${linkStyle}`}>Logout</p>
               </Link>
-            </div>
+            )}
           </>
         ) : (
           <button className="" onClick={() => setIsMenuToggled(!isMenuToggled)}>
-            <Bars3Icon className={`${linkStyle} h-10 w-10 text-text-gray cursor-pointer`} />
+            <Bars3Icon
+              className={`${linkStyle} h-10 w-10 text-text-gray cursor-pointer`}
+            />
           </button>
         )}
 
         {!isAboveMediumScreen && isMenuToggled && (
-            <div className="fixed right-0 bottom-0 bg-card z-20 h-full w-full">
-              <BackgroundCircles />
+          <div className="fixed right-0 bottom-0 bg-card z-20 h-full w-full">
+            <BackgroundCircles />
 
-              <div className="flex justify-end p-10">
-                <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                  <XMarkIcon className={`${linkStyle} h-10 w-10 text-text-gray cursor-pointer`} />
-                </button>
-              </div>
+            <div className="flex justify-end p-10">
+              <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                <XMarkIcon
+                  className={`${linkStyle} h-10 w-10 text-text-gray cursor-pointer`}
+                />
+              </button>
+            </div>
 
-              <div>
-                <div className="flex flex-col justify-center items-center gap-8 mt-10">
-                  <Link to={"/explore"} onClick={() => setIsMenuToggled(false)}>
-                    <p className={`${linkStyle}`}>Explore</p>
+            <div>
+              <div className="flex flex-col justify-center items-center gap-8 mt-10">
+                <Link to={"/explore"} onClick={() => setIsMenuToggled(false)}>
+                  <p className={`${linkStyle}`}>Explore</p>
+                </Link>
+
+                {!isAuthenticated ? (
+                  <>
+                    <Link to="/login" onClick={() => setIsMenuToggled(false)}>
+                      <p className={`${linkStyle}`}>Log In</p>
+                    </Link>
+
+                    <Link
+                      to="/register"
+                      onClick={() => setIsMenuToggled(false)}
+                    >
+                      <p className={`${linkStyle}`}>Register</p>
+                    </Link>
+                  </>
+                ) : (
+                  <Link to="/logout" onClick={() => setIsMenuToggled(false)}>
+                    <p className={`${linkStyle}`}>Logout</p>
                   </Link>
-
-                  <Link to="/login" onClick={() => setIsMenuToggled(false)}>
-                    <p className={`${linkStyle}`}>Log In</p>
-                  </Link>
-
-                  <Link to="/register" onClick={() => setIsMenuToggled(false)}>
-                    <p className={`${linkStyle}`}>Register</p>
-                  </Link>
-                </div>
+                )}
               </div>
             </div>
+          </div>
         )}
       </div>
     </nav>
