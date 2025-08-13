@@ -10,7 +10,6 @@ const LogIn = () => {
   const [state, formAction, isPending] = useActionState(loginAction, null);
 
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   const onFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -59,8 +58,6 @@ const LogIn = () => {
                 type="password"
                 placeholder="Password"
                 name="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
                 className="p-2 outline-none w-[95%]"
               />
               <LockClosedIcon className="w-5 text-indigo-300" />
