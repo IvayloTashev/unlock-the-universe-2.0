@@ -5,6 +5,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import BackgroundCircles from "./BackgroundCircles";
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../contexts/AuthContext";
+import { motion } from "motion/react";
+import { mobileNavbarData } from "../../utils";
 
 const Navbar = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width: 768px)");
@@ -55,44 +57,94 @@ const Navbar = () => {
         )}
 
         {!isAboveMediumScreen && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 bg-card z-20 h-full w-full">
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", stiffness: 80 }}
+            className="fixed right-0 bottom-0  z-20 h-full w-full bg-black"
+          >
             <BackgroundCircles />
 
             <div className="flex justify-end p-10">
-              <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+              <motion.button
+                initial={{ rotate: -90, opacity: 0 }}
+                animate={{ rotate: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                onClick={() => setIsMenuToggled(!isMenuToggled)}
+              >
                 <XMarkIcon
                   className={`${linkStyle} h-10 w-10 text-text-gray cursor-pointer`}
                 />
-              </button>
+              </motion.button>
             </div>
 
             <div>
-              <div className="flex flex-col justify-center items-center gap-8 mt-10">
-                <Link to={"/explore"} onClick={() => setIsMenuToggled(false)}>
-                  <p className={`${linkStyle}`}>Explore</p>
-                </Link>
-
-                {!isAuthenticated ? (
-                  <>
-                    <Link to="/login" onClick={() => setIsMenuToggled(false)}>
-                      <p className={`${linkStyle}`}>Log In</p>
-                    </Link>
-
+              <motion.div
+                initial="hidden"
+                animate="show"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  show: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { staggerChildren: 0.2, delayChildren: 0.1 },
+                  },
+                }}
+                className="flex flex-col justify-center items-center gap-8 mt-10"
+              >
+                {mobileNavbarData.map((item) => (
+                  <motion.div
+                    key={item.to}
+                    variants={{
+                      hidden: { opacity: 0, y: 15 },
+                      show: { opacity: 1, y: 0 },
+                    }}
+                  >
                     <Link
-                      to="/register"
+                      className={`${linkStyle} drop-shadow-xl drop-shadow-teal-500/80`}
+                      to={item.to}
                       onClick={() => setIsMenuToggled(false)}
                     >
-                      <p className={`${linkStyle}`}>Register</p>
+                      <p className={`${linkStyle}`}>{item.label}</p>
                     </Link>
-                  </>
-                ) : (
-                  <Link to="/logout" onClick={() => setIsMenuToggled(false)}>
-                    <p className={`${linkStyle}`}>Logout</p>
-                  </Link>
-                )}
-              </div>
+                  </motion.div>
+                ))}
+
+                <motion.div
+                  initial={{ opacity: 0, y: 250 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1.5 }}
+                  className="flex flex-col justify-center items-center gap-8 mt-10"
+                >
+                  {!isAuthenticated ? (
+                    <>
+                      <Link to="/login" onClick={() => setIsMenuToggled(false)}>
+                        <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
+                          Log In
+                        </p>
+                      </Link>
+
+                      <Link
+                        to="/register"
+                        onClick={() => setIsMenuToggled(false)}
+                      >
+                        <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
+                          Register
+                        </p>
+                      </Link>
+                    </>
+                  ) : (
+                    <Link to="/logout" onClick={() => setIsMenuToggled(false)}>
+                      <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
+                        Logout
+                      </p>
+                    </Link>
+                  )}
+                </motion.div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
     </nav>

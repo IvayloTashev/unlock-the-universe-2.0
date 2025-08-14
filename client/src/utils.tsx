@@ -21,6 +21,14 @@ export const explorePageInfo = [
   { image: pod, title: "Picture of the Day" },
 ];
 
+export const mobileNavbarData = [
+  { to: "/explore", label: "Explore" },
+  { to: "/explore/celestialbodies", label: "Celestial Bodies" },
+  { to: "/explore/astronauts", label: "Astronauts" },
+  { to: "/explore/missions", label: "Missions" },
+  { to: "/explore/pictureoftheday", label: "Picture Of The Day" },
+]
+
 export const localImages: Record<PlanetName, string> = {
   sun: sunImage,
   mercury: mercuryImage,
