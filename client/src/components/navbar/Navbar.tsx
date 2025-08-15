@@ -18,10 +18,11 @@ const Navbar = () => {
     "hover:text-teal-500 hover:scale-110 transition duration-500";
 
   return (
-    <nav className="bg-card text-text-gray text-2xl font-bebas px-6 border-b-1 border-gray-100/20">
+    <nav className="bg-card text-text-gray border-b border-teal-500/20 shadow-sm shadow-teal-500/20 text-2xl font-bebas px-5">
+      <div className="absolute inset-0 bg-[url('/stars.svg')] opacity-20 bg-cover bg-center pointer-events-none" />
       <div className="flex items-center justify-between h-25">
         <Link to="/" className="z-30" onClick={() => setIsMenuToggled(false)}>
-          <img className="h-22 rounded-4xl" src={navIcon} alt="planet" />
+          <motion.img className="h-22 rounded-4xl" src={navIcon} alt="planet" />
         </Link>
 
         {isAboveMediumScreen ? (
