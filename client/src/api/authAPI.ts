@@ -8,3 +8,10 @@ export const login = (email: string, password: string): Promise<AuthState> => po
 export const register = (email: string, password: string): Promise<AuthState> => post(`${BASE_URL}/register`, { email, password });
 
 export const logout = () => get(`${BASE_URL}/logout`);
+
+export const getUserDetails = async () => {
+    return get<{ _id: string; email: string }>(`${BASE_URL}/me`);
+}
+
+
+

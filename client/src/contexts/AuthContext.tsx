@@ -1,5 +1,6 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import type { AuthContextType, AuthProviderProps, AuthState } from "../types";
+import { getUserDetails } from "../api/authAPI";
 
 export const AuthContext = createContext<AuthContextType>({
   userId: "",
@@ -12,6 +13,23 @@ export const AuthContext = createContext<AuthContextType>({
 
 export function AuthContextProvider({ children }: AuthProviderProps) {
   const [authState, setAuthState] = useState<AuthState>({});
+
+  useEffect(() => {
+    (async () => {
+      const token = localStorage.getItem("accessToken");
+      
+      if (!token) {
+        return;
+      }
+
+      try {
+        const user = await getUserDetails();
+        setAuthState({ ...user, accessToken: token });
+      } catch {
+        localStorage.removeItem("accessToken");
+      }
+    })();
+  }, []);
 
   const changeAuthState = (state: AuthState) => {
     if (state.accessToken) {
