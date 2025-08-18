@@ -13,6 +13,8 @@ import Register from "./components/register/Register";
 import LogIn from "./components/login/LogIn";
 import { AuthContextProvider } from "./contexts/AuthContext";
 import Logout from "./components/logout/Logout";
+import IsAuthenticated from "./components/guards/IsAuthenticated";
+import IsNotAuthenticated from "./components/guards/IsNotAuthenticated";
 
 function App() {
   return (
@@ -54,9 +56,14 @@ function App() {
               element={<PictureOfTheDay />}
             />
 
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<LogIn />} />
-            <Route path="/logout" element={<Logout />} />
+            <Route element={<IsNotAuthenticated />}>
+              <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<LogIn />} />
+            </Route>
+
+            <Route element={<IsAuthenticated />}>
+              <Route path="/logout" element={<Logout />} />
+            </Route>
             
           </Routes>
         </main>
