@@ -1,8 +1,8 @@
-import { useState } from "react";
 import navIcon from "../../assets/navIcon.png";
 import useMediaQuery from "../../hooks/useMediaQuery";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import BackgroundCircles from "./BackgroundCircles";
+import { useState } from "react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../contexts/AuthContext";
 import { motion } from "motion/react";
@@ -18,8 +18,8 @@ const Navbar = () => {
     "hover:text-teal-500 hover:scale-110 transition duration-500";
 
   return (
-    <nav className="bg-card text-text-gray border-b border-teal-500/20 shadow-sm shadow-teal-500/20 text-2xl font-bebas px-5">
-      <div className="absolute inset-0 bg-[url('/stars.svg')] opacity-20 bg-cover bg-center pointer-events-none" />
+    <nav
+      className="bg-black/40 text-text-gray border-b border-teal-500/20 shadow-xl shadow-teal-500 text-2xl font-bebas px-5">
       <div className="flex items-center justify-between h-25">
         <Link to="/" className="z-30" onClick={() => setIsMenuToggled(false)}>
           <motion.img className="h-22 rounded-4xl" src={navIcon} alt="planet" />
