@@ -6,7 +6,7 @@ const AstronautsCatalog = () => {
   const astronautsData = useGetAllAstronauts();
 
   return (
-    <section className="flex flex-col items-center px-4 py-12">
+    <section className="flex flex-col items-center px-4 py-12 bg-gradient-to-bl from-black via-gray-900 to-black">
       <h1 className="font-bebas text-5xl md:text-6xl text-text-white mb-10">
         Astronauts
       </h1>

@@ -12,7 +12,7 @@ const AstronautSingleCard = () => {
   const isAbove2xl = useMediaQuery("(min-width: 1536px)");
 
   return (
-    <section className="min-h-screen text-text-gray py-16 px-4 relative">
+    <section className="min-h-screen text-text-gray py-16 px-4 relative bg-gradient-to-br from-black via-gray-900 to-black">
       {isAbove2xl ? (
         <motion.img
           initial={{ opacity: 0, x: -100 }}
@@ -39,8 +39,8 @@ const AstronautSingleCard = () => {
         ""
       )}
       <div
-        className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 border border-gray-100/20
-      py-20 px-5 bg-gradient-to-br from-black via-slate-900 to-black rounded-3xl"
+        className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10
+      py-20 px-5"
       >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -61,7 +61,7 @@ const AstronautSingleCard = () => {
           transition={{ delay: 0.2, duration: 0.7 }}
           className="w-full md:w-1/2 bg-white/5 backdrop-blur-sm rounded-2xl p-6 shadow-lg text-center md:text-left"
         >
-          <h1 className="text-3xl font-bold mb-4">{astronautData?.title}</h1>
+          <h1 className="text-3xl font-extrabold mb-4">{astronautData?.title}</h1>
           <p className="text-gray-300 text-base leading-relaxed">
             {astronautData?.description}
           </p>
