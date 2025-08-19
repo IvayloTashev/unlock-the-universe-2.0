@@ -15,6 +15,7 @@ import { AuthContextProvider } from "./contexts/AuthContext";
 import Logout from "./components/logout/Logout";
 import IsAuthenticated from "./components/guards/IsAuthenticated";
 import IsNotAuthenticated from "./components/guards/IsNotAuthenticated";
+import NotFound from "./components/not-found/notFound";
 
 function App() {
   return (
@@ -27,34 +28,15 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Hero />} />
-
             <Route path="/explore" element={<Explore />} />
-
-            <Route
-              path="/explore/celestialbodies"
-              element={<CelestialBodiesCatalog />}
-            />
-            <Route
-              path="/explore/celestialbodies/:id"
-              element={<CelestialBodiesSingleCard />}
-            />
-
+            <Route path="/explore/celestialbodies" element={<CelestialBodiesCatalog />} />
+            <Route path="/explore/celestialbodies/:id" element={<CelestialBodiesSingleCard />} />
             <Route path="/explore/astronauts" element={<AstronautsCatalog />} />
-            <Route
-              path="/explore/astronauts/:id"
-              element={<AstronautSingleCard />}
-            />
-
+            <Route path="/explore/astronauts/:id" element={<AstronautSingleCard />} />
             <Route path="/explore/missions" element={<MissionsCatalog />} />
-            <Route
-              path="/explore/missions/:id"
-              element={<MissionSingleCard />}
-            />
-
-            <Route
-              path="/explore/pictureoftheday"
-              element={<PictureOfTheDay />}
-            />
+            <Route path="/explore/missions/:id" element={<MissionSingleCard />} />
+            <Route path="/explore/pictureoftheday" element={<PictureOfTheDay />} />
+            <Route path="*" element={<NotFound />} />
 
             <Route element={<IsNotAuthenticated />}>
               <Route path="/register" element={<Register />} />
