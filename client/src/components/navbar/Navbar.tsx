@@ -18,8 +18,7 @@ const Navbar = () => {
     "hover:text-teal-500 hover:scale-110 transition duration-500";
 
   return (
-    <nav
-      className="bg-black/40 text-text-gray border-b border-teal-500/20 shadow-xl shadow-teal-500 text-2xl font-bebas px-5">
+    <nav className="bg-black/40 text-text-gray border-b border-teal-500/20 shadow-xl shadow-teal-500 text-2xl font-bebas px-5">
       <div className="flex items-center justify-between h-25">
         <Link to="/" className="z-30" onClick={() => setIsMenuToggled(false)}>
           <motion.img className="h-22 rounded-4xl" src={navIcon} alt="planet" />
@@ -44,13 +43,23 @@ const Navbar = () => {
                 </Link>
               </div>
             ) : (
-              <Link to="/logout">
-                <p className={`${linkStyle}`}>Logout</p>
-              </Link>
+              <div className="flex gap-8">
+                <Link to="/profile">
+                  <p className={`${linkStyle}`}>Profile</p>
+                </Link>
+
+                <Link to="/addphoto">
+                  <p className={`${linkStyle}`}>Add Photo</p>
+                </Link>
+
+                <Link to="/logout">
+                  <p className={`${linkStyle}`}>Logout</p>
+                </Link>
+              </div>
             )}
           </>
         ) : (
-          <button className="" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+          <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
             <Bars3Icon
               className={`${linkStyle} h-10 w-10 text-text-gray cursor-pointer`}
             />
@@ -92,7 +101,7 @@ const Navbar = () => {
                     transition: { staggerChildren: 0.2, delayChildren: 0.1 },
                   },
                 }}
-                className="flex flex-col justify-center items-center gap-8 mt-10"
+                className="flex flex-col justify-center items-center gap-5 mt-10"
               >
                 {mobileNavbarData.map((item) => (
                   <motion.div
@@ -119,7 +128,7 @@ const Navbar = () => {
                   className="flex flex-col justify-center items-center gap-8 mt-10"
                 >
                   {!isAuthenticated ? (
-                    <>
+                    <div className="flex flex-col gap-5 items-center">
                       <Link to="/login" onClick={() => setIsMenuToggled(false)}>
                         <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
                           Log In
@@ -134,13 +143,30 @@ const Navbar = () => {
                           Register
                         </p>
                       </Link>
-                    </>
+                    </div>
                   ) : (
-                    <Link to="/logout" onClick={() => setIsMenuToggled(false)}>
-                      <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
-                        Logout
-                      </p>
-                    </Link>
+                    <div className="flex flex-col gap-5 items-center">
+                      <Link to="/profile">
+                        <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
+                          Profile
+                        </p>
+                      </Link>
+
+                      <Link to="/addphoto">
+                        <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
+                          Add Photo
+                        </p>
+                      </Link>
+
+                      <Link
+                        to="/logout"
+                        onClick={() => setIsMenuToggled(false)}
+                      >
+                        <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
+                          Logout
+                        </p>
+                      </Link>
+                    </div>
                   )}
                 </motion.div>
               </motion.div>
