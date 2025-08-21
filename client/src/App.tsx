@@ -15,7 +15,8 @@ import { AuthContextProvider } from "./contexts/AuthContext";
 import Logout from "./components/logout/Logout";
 import IsAuthenticated from "./components/guards/IsAuthenticated";
 import IsNotAuthenticated from "./components/guards/IsNotAuthenticated";
-import NotFound from "./components/not-found/notFound";
+import PhotoCatalog from "./components/explore/photo-gallery/PhotoCatalog";
+import NotFound from "./components/not-found/NotFound";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/explore/missions" element={<MissionsCatalog />} />
             <Route path="/explore/missions/:id" element={<MissionSingleCard />} />
             <Route path="/explore/pictureoftheday" element={<PictureOfTheDay />} />
+            <Route path="/photos" element={<PhotoCatalog/>} />
             <Route path="*" element={<NotFound />} />
 
             <Route element={<IsNotAuthenticated />}>
