@@ -49,6 +49,14 @@ export interface MissionType {
     _id: string,
 }
 
+export interface PhotosType {
+    _ownerId: string,
+    description?: string,
+    image: string,
+    _createdOn: number,
+    _id: string,
+}
+
 export type PlanetName =
     | "sun"
     | "mercury"
