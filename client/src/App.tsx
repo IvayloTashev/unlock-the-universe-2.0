@@ -37,7 +37,7 @@ function App() {
             <Route path="/explore/missions" element={<MissionsCatalog />} />
             <Route path="/explore/missions/:id" element={<MissionSingleCard />} />
             <Route path="/explore/pictureoftheday" element={<PictureOfTheDay />} />
-            <Route path="/photos" element={<PhotoCatalog/>} />
+            <Route path="/explore/photos" element={<PhotoCatalog/>} />
             <Route path="*" element={<NotFound />} />
 
             <Route element={<IsNotAuthenticated />}>

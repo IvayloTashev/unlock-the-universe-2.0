@@ -12,6 +12,8 @@ import jupiterImage from "./assets/jupiter.png";
 import saturnImage from "./assets/saturn.png";
 import uranusImage from "./assets/uranus.png";
 import neptuneImage from "./assets/neptune.png";
+import photosImage from "./assets/photosImage.png";
+
 import type { PlanetName } from "./types";
 
 export const explorePageInfo = [
@@ -19,6 +21,7 @@ export const explorePageInfo = [
   { image: astronaut, title: "Astronauts" },
   { image: spaceShuttle, title: "Missions" },
   { image: pod, title: "Picture of the Day" },
+  { image: photosImage, title: "Photos" }
 ];
 
 export const mobileNavbarData = [
