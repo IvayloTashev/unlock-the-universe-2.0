@@ -17,6 +17,7 @@ import IsAuthenticated from "./components/guards/IsAuthenticated";
 import IsNotAuthenticated from "./components/guards/IsNotAuthenticated";
 import PhotoCatalog from "./components/explore/photo-gallery/PhotoCatalog";
 import NotFound from "./components/not-found/NotFound";
+import PhotoSingleCard from "./components/explore/photo-gallery/PhotoSingleCard";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/explore/missions/:id" element={<MissionSingleCard />} />
             <Route path="/explore/pictureoftheday" element={<PictureOfTheDay />} />
             <Route path="/explore/photos" element={<PhotoCatalog/>} />
+            <Route path="/explore/photos/:id" element={<PhotoSingleCard />} />
             <Route path="*" element={<NotFound />} />
 
             <Route element={<IsNotAuthenticated />}>
