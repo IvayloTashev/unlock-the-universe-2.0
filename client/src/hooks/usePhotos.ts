@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllPhotos } from "../api/photosAPI";
+import { getAllPhotos, getOnePhoto } from "../api/photosAPI";
 import type { PhotosType } from "../types";
 
 
@@ -18,4 +18,21 @@ export const useGetAllPhotos = () => {
     }, [photos])
 
     return photos
+}
+
+export const useGetOnePhoto = (id: string) => {
+    const [photo, setPhoto] = useState<PhotosType | null>(null);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const result = await getOnePhoto(id) as PhotosType;
+                setPhoto(result);
+            } catch (err) {
+                console.error("Error fetching data:", err);
+            }
+        })();
+    }, [photo])
+
+    return photo
 }
