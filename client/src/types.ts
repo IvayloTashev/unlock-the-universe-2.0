@@ -57,6 +57,14 @@ export interface PhotosType {
     _id: string,
 }
 
+export interface CommentType {
+    _ownerId: string,
+    id: string,
+    text: string,
+    _createdOn: number,
+    _id: string
+}
+
 export type PlanetName =
     | "sun"
     | "mercury"
