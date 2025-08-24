@@ -15,7 +15,7 @@ export const useGetAllPhotos = () => {
                 console.error("Error fetching data:", err);
             }
         })();
-    }, [photos])
+    }, [])
 
     return photos
 }
@@ -32,7 +32,7 @@ export const useGetOnePhoto = (id: string) => {
                 console.error("Error fetching data:", err);
             }
         })();
-    }, [photo])
+    }, [])
 
     return photo
 }
