@@ -4,11 +4,11 @@ import astronaut from "../../assets/astronaut-3.png";
 
 const NotFound = () => {
   return (
-    <div className="relative h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black text-white">
+    <div className="relative h-screen w-full flex flex-col items-center justify-center pt-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
       <motion.img
         src={astronaut}
         alt="astronaut"
-        className="w-120 absolute -top-13"
+        className="w-120 absolute -top-5"
         animate={{ y: [0, -20, 0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
       />
