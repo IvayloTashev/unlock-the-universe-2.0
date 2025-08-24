@@ -1,5 +1,7 @@
+import { getUserDetails } from "../api/authAPI";
 import type { AuthState } from "../types";
 import { useLogin, useRegister } from "./useAuth";
+import { useCreateComment } from "./useComment";
 
 export const useLoginAction = () => {
     const login = useLogin();
@@ -62,7 +64,20 @@ export const useRegisterAction = () => {
         } catch (err: any) {
             return { success: false, error: err.message };
         }
-
     }
+}
 
+export const useAddCommentAction = (id: string) => {
+    const addComment = useCreateComment();
+
+    return async (_prevState: any, formData: FormData) => {
+        const textInput = formData.get("comment") as string;
+
+        try {
+            const comment = await addComment(id, textInput);
+            return { success: true, comment };
+        } catch (err: any) {
+            return { success: false, error: err.message };
+        }
+    }
 }

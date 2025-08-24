@@ -8,7 +8,7 @@ export function useCreateComment() {
     return commentCreateHandler;
 }
 
-export function useGetAllComments(id: string) {
+export function useGetAllComments(id: string): [CommentType[] | null, (comments: CommentType[]) => void] {
     const [comments, setComments] = useState<CommentType[] | null>(null);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ export function useGetAllComments(id: string) {
         })();
     }, [id]);
 
-    return [comments];
+    return [comments, setComments];
 }
 
 export function useGetOneComment(commentId: string) {
