@@ -5,6 +5,7 @@ import { getUserDetails } from "../api/authAPI";
 export const AuthContext = createContext<AuthContextType>({
   userId: "",
   email: "",
+  username: "",
   accessToken: "",
   isAuthenticated: false,
   changeAuthState: () => {},

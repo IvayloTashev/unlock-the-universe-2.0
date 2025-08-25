@@ -1753,20 +1753,6 @@
         },
 
         comments: {
-            "fae2375c-1e62-4430-a7c9-42f05aeb7e8e": {
-                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "id": "39e95c53-c0bc-4489-9c4f-57ae660c66d6",
-                "text": "The more you know.",
-                "_createdOn": 1722877324737,
-                "_id": "fae2375c-1e62-4430-a7c9-42f05aeb7e8e"
-            },
-            "92ebdbaa-4365-4aae-8008-df12851fa154": {
-                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
-                "id": "39e95c53-c0bc-4489-9c4f-57ae660c66d6",
-                "text": "Amazing photo and interesting fact!",
-                "_createdOn": 1722877406781,
-                "_id": "92ebdbaa-4365-4aae-8008-df12851fa154"
-            },
             "d7b2e4d8-0274-4d75-8948-cf0e47811006": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
                 "id": "c25eae2c-10c7-4190-b628-470309e2b8d3",
