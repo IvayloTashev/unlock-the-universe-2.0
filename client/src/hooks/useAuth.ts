@@ -1,6 +1,7 @@
-import { login, logout, register } from "../api/authAPI";
+import { useEffect, useState } from "react";
+import { getUserDetails, login, logout, register } from "../api/authAPI";
 import { useAuthContext } from "../contexts/AuthContext";
-import type { AuthState } from "../types";
+import type { AuthState, UserDetailsType } from "../types";
 
 export const useLogin = () => {
     const { changeAuthState } = useAuthContext();
@@ -37,5 +38,22 @@ export const useLogout = () => {
     }
 
     return logoutHandler
+}
+
+export const useGetUserData = () => {
+    const [userData, setUserData] = useState<UserDetailsType | null>(null);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const result = await getUserDetails() as UserDetailsType;
+                setUserData(result);
+            } catch (err) {
+                console.error("Error fetching data:", err);
+            }
+        })();
+    }, []);
+
+    return userData;
 }
 

@@ -62,6 +62,19 @@ export interface CommentType {
     id: string,
     text: string,
     _createdOn: number,
+    author?: AuthorType
+    _id: string
+}
+
+interface AuthorType {
+    _id: string
+    email: string;
+    username: string;
+}
+
+export interface UserDetailsType {
+    email: string;
+    username: string;
     _id: string
 }
 
@@ -80,12 +93,14 @@ export type PlanetName =
 export interface AuthState {
     _id?: string;
     email?: string;
+    username?: string;
     accessToken?: string;
 }
 
 export interface AuthContextType {
     userId?: string;
     email?: string;
+    username?: string,
     accessToken?: string;
     isAuthenticated: boolean;
     changeAuthState: (state: AuthState) => void;
