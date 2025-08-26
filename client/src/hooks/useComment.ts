@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { createComment, getAllComments, getOneComment } from "../api/commentsAPI";
+import { createComment, deleteComment, getAllComments, getOneComment } from "../api/commentsAPI";
 import type { CommentType } from "../types";
 
 export function useCreateComment() {
@@ -41,4 +41,28 @@ export function useGetOneComment(commentId: string) {
     }, []);
 
     return [comment];
+}
+
+export function useDeleteComment(photoId: string) {
+    const handleDelete = async (
+        commentId: string,
+        setComments: React.Dispatch<React.SetStateAction<CommentType[]>>
+    ) => {
+        const confirmation = confirm(`Do you want to delete this comment?`);
+
+        if (!confirmation) {
+            return;
+        }
+
+        try {
+            setComments((prev) => prev.filter((c) => c._id !== commentId));
+
+            await deleteComment(commentId);
+
+        } catch (err: any) {
+            console.error(err.message);
+        }
+    };
+
+    return { handleDelete };
 }

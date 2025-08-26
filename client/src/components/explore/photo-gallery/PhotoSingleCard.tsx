@@ -7,7 +7,7 @@ import {
   TrashIcon,
   PencilSquareIcon,
 } from "@heroicons/react/24/solid";
-import { useGetAllComments } from "../../../hooks/useComment";
+import { useDeleteComment, useGetAllComments } from "../../../hooks/useComment";
 import { useAddCommentAction } from "../../../hooks/useForm";
 import type { CommentType } from "../../../types";
 import { getAllComments } from "../../../api/commentsAPI";
@@ -15,6 +15,7 @@ import { getAllComments } from "../../../api/commentsAPI";
 const PhotoSingleCard = () => {
   const { userId, isAuthenticated } = useAuthContext();
   const { id } = useParams();
+  const { handleDelete } = useDeleteComment(id!);
   const photo = useGetOnePhoto(id!);
   const addComment = useAddCommentAction(id!);
   const [allComments] = useGetAllComments(id!);
@@ -23,9 +24,6 @@ const PhotoSingleCard = () => {
   const [comment, setComment] = useState("");
 
   const isPhotoOwner = userId === photo?._ownerId;
-
-  console.log(allComments);
-  
 
   useEffect(() => {
     if (allComments) {
@@ -42,6 +40,7 @@ const PhotoSingleCard = () => {
       })();
     }
   }, [state]);
+
 
   return (
     <section className="bg-gradient-to-br from-gray-950 via-gray-900 to-black min-h-screen flex justify-center items-start px-4 py-10">
@@ -82,7 +81,7 @@ const PhotoSingleCard = () => {
                     <button className="text-blue-400 hover:text-blue-300 transition-colors">
                       <PencilSquareIcon className="w-5 h-5" />
                     </button>
-                    <button className="text-red-400 hover:text-red-300 transition-colors">
+                    <button className="text-red-400 hover:text-red-300 transition-colors" onClick={() => handleDelete(comment._id, setComments)}>
                       <TrashIcon className="w-5 h-5" />
                     </button>
                   </div>
