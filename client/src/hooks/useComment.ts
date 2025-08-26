@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { createComment, deleteComment, getAllComments, getOneComment } from "../api/commentsAPI";
+import { createComment, deleteComment, getAllComments, getOneComment, updateComment } from "../api/commentsAPI";
 import type { CommentType } from "../types";
 
 export function useCreateComment() {
@@ -66,3 +66,26 @@ export function useDeleteComment(photoId: string) {
 
     return { handleDelete };
 }
+
+export function useEditComment(photoId: string) {
+    const handleEdit = async (
+      commentId: string,
+      newText: string,
+      setComments: React.Dispatch<React.SetStateAction<CommentType[]>>
+    ) => {
+      try {
+        setComments((prev) =>
+          prev.map((c) =>
+            c._id === commentId ? { ...c, text: newText } : c
+          )
+        );
+  
+        await updateComment(commentId, newText);
+  
+      } catch (err: any) {
+        console.error(err.message);
+      }
+    };
+  
+    return { handleEdit };
+  }
