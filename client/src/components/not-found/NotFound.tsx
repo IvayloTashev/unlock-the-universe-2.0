@@ -8,7 +8,7 @@ const NotFound = () => {
       <motion.img
         src={astronaut}
         alt="astronaut"
-        className="w-120 absolute -top-5"
+        className="w-100 absolute -top-5"
         animate={{ y: [0, -20, 0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
       />
