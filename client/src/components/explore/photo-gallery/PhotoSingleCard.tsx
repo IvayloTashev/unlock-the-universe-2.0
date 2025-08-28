@@ -143,7 +143,7 @@ const PhotoSingleCard = () => {
                   value={comment}
                   onChange={(e) => setComment(e.target.value)}
                   placeholder="Write a comment..."
-                  className="flex-1 px-4 py-2 rounded-xl bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-amber-400/50 transition-all"
+                  className="flex-1 px-4 py-2 rounded-xl bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-amber-400/50 transition-all break-words"
                 />
                 <button
                   type="submit"
