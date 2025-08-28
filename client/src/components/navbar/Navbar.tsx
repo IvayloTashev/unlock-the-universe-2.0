@@ -44,14 +44,6 @@ const Navbar = () => {
               </div>
             ) : (
               <div className="flex gap-8">
-                <Link to="/profile">
-                  <p className={`${linkStyle}`}>Profile</p>
-                </Link>
-
-                <Link to="/addphoto">
-                  <p className={`${linkStyle}`}>Add Photo</p>
-                </Link>
-
                 <Link to="/logout">
                   <p className={`${linkStyle}`}>Logout</p>
                 </Link>
@@ -72,7 +64,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", stiffness: 80 }}
-            className="fixed right-0 bottom-0  z-20 h-full w-full bg-black"
+            className="fixed right-0 bottom-0  z-30 h-full w-full bg-black"
           >
             <BackgroundCircles />
 
@@ -146,18 +138,6 @@ const Navbar = () => {
                     </div>
                   ) : (
                     <div className="flex flex-col gap-5 items-center">
-                      <Link to="/profile">
-                        <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
-                          Profile
-                        </p>
-                      </Link>
-
-                      <Link to="/addphoto">
-                        <p className="hover:text-purple-500 hover:scale-110 transition duration-500 drop-shadow-xl drop-shadow-purple-500/80">
-                          Add Photo
-                        </p>
-                      </Link>
-
                       <Link
                         to="/logout"
                         onClick={() => setIsMenuToggled(false)}

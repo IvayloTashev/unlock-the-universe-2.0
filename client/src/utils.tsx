@@ -30,6 +30,7 @@ export const mobileNavbarData = [
   { to: "/explore/astronauts", label: "Astronauts" },
   { to: "/explore/missions", label: "Missions" },
   { to: "/explore/pictureoftheday", label: "Picture Of The Day" },
+  { to: "/explore/photos", label: "Photos" },
 ]
 
 export const localImages: Record<PlanetName, string> = {
