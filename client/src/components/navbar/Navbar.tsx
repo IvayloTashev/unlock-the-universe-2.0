@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="bg-black/40 text-text-gray border-b border-teal-500/20 shadow-xl shadow-teal-500 text-2xl font-bebas px-5">
       <div className="flex items-center justify-between h-25">
-        <Link to="/" className="z-30" onClick={() => setIsMenuToggled(false)}>
+        <Link to="/" className="z-40" onClick={() => setIsMenuToggled(false)}>
           <motion.img className="h-22 rounded-4xl" src={navIcon} alt="planet" />
         </Link>
 

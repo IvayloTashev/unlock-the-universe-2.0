@@ -18,9 +18,9 @@ const HeroText = ({ position }: Props) => {
       <h2 className="text-center text-4xl sm:text-5xl md:text-6xl text-shadow-sm text-shadow-teal-500">
         Unlock the Secrets of the Solar System
       </h2>
-      <p className="text-center font-manrope text-xl md:text-2xl text-gray-300 max-w-[600px] mt-2">
-        Dive into the cosmos and discover planets, astronauts, and space
-        missions like never before.
+      <p className="text-center font-manrope text-xl md:text-2xl text-gray-300 max-w-[700px] mt-2">
+        Dive into the cosmos and discover planets, astronauts, space
+        missions and more like never before.
       </p>
       <Link
         to="/explore"
