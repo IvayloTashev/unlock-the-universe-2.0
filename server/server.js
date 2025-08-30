@@ -1704,13 +1704,7 @@
                 "_createdOn": 1722510915965,
                 "_id": "c25eae2c-10c7-4190-b628-470309e2b8d3"
             },
-            "39e95c53-c0bc-4489-9c4f-57ae660c66d6": {
-                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                "description": "",
-                "image": "https://cdn.britannica.com/29/148329-050-269A9EFE/night-sky-Milky-Way-Galaxy.jpg",
-                "_createdOn": 1722515526688,
-                "_id": "39e95c53-c0bc-4489-9c4f-57ae660c66d6"
-            },
+
             "5ffffb1c-d03f-4758-b3e7-e68211cbebe5": {
                 "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
                 "description": "",
@@ -1749,6 +1743,27 @@
                 "image": "https://starwalk.space/gallery/images/milky-way-faq/1920x1080.jpg",
                 "_createdOn": 1755708447335,
                 "_id": "8a98aa1e-ee21-43eb-8913-aa06f21f859f"
+            },
+
+            "5cde631f-6612-4b62-b6f7-f050a33f5197": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "image": "https://wandererwrites.com/wp-content/uploads/2018/08/milky-way-984050_1920.jpg",
+                "_createdOn": 1756562361599,
+                "_id": "5cde631f-6612-4b62-b6f7-f050a33f5197"
+            },
+
+            "ed7ceeac-c8ed-441b-9bb5-9d33ccc510a2": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "image": "https://www.nps.gov/grca/learn/nature/images/pawlak.jpg?maxwidth=1300&maxheight=1300&autorotate=false",
+                "_createdOn": 1756562409007,
+                "_id": "ed7ceeac-c8ed-441b-9bb5-9d33ccc510a2"
+            },
+
+            "e83f0573-aea9-445f-8cf2-bef01c6df2f3": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "image": "https://media.wired.com/photos/5fdb8cf40d43f1e1eafb6eeb/3:2/w_2560%2Cc_limit/Science_nightsky_462555821.jpg",
+                "_createdOn": 1756562451901,
+                "_id": "e83f0573-aea9-445f-8cf2-bef01c6df2f3"
             }
         },
 
@@ -1756,7 +1771,7 @@
             "d7b2e4d8-0274-4d75-8948-cf0e47811006": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
                 "id": "c25eae2c-10c7-4190-b628-470309e2b8d3",
-                "text": "Good job! Fantastic photo.",
+                "text": "Fantastic photo.",
                 "_createdOn": 1722877911519,
                 "_id": "d7b2e4d8-0274-4d75-8948-cf0e47811006"
             }
