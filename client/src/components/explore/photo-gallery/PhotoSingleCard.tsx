@@ -2,16 +2,8 @@ import { useActionState, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useGetOnePhoto } from "../../../hooks/usePhotos";
 import { useAuthContext } from "../../../contexts/AuthContext";
-import {
-  PaperAirplaneIcon,
-  TrashIcon,
-  PencilSquareIcon,
-} from "@heroicons/react/24/solid";
-import {
-  useDeleteComment,
-  useEditComment,
-  useGetAllComments,
-} from "../../../hooks/useComment";
+import { PaperAirplaneIcon, TrashIcon, PencilSquareIcon } from "@heroicons/react/24/solid";
+import { useDeleteComment, useEditComment, useGetAllComments} from "../../../hooks/useComment";
 import { useAddCommentAction } from "../../../hooks/useForm";
 import type { CommentType } from "../../../types";
 import { getAllComments } from "../../../api/commentsAPI";
@@ -29,8 +21,6 @@ const PhotoSingleCard = () => {
   const [comments, setComments] = useState<CommentType[]>([]);
   const [state, formAction, isPending] = useActionState(addComment, null);
   const [comment, setComment] = useState("");
-
-  const isPhotoOwner = userId === photo?._ownerId;
 
   useEffect(() => {
     if (allComments) {
@@ -57,14 +47,6 @@ const PhotoSingleCard = () => {
             alt="photo"
             className="w-full max-w-[800px] rounded-t-2xl object-cover transition-transform duration-500 relative"
           />
-
-          {isPhotoOwner && (
-            <div className="px-2 py-1 absolute bottom-0 left-0 bg-black/50 rounded-tr-xl">
-              <button className="text-red-400 hover:text-red-300 transition-colors text-sm font-medium">
-                Delete Photo
-              </button>
-            </div>
-          )}
         </div>
 
         <div className="border-t border-gray-800 px-6 py-6">
