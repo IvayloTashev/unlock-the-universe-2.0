@@ -10,7 +10,7 @@ type Props = {
 const HeroText = ({ position }: Props) => {
   return (
     <div
-      className={`${position} absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 sm:w-3/5 mt-10 font-bebas text-white flex flex-col justify-center items-center gap-1`}
+      className={`${position} absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 md:mt-20 font-bebas text-white flex flex-col justify-center items-center gap-1`}
     >
       <p className="text-teal-500 text-3xl sm:text-4xl text-shadow-sm text-shadow-teal-500">
         Journey Begins Here
