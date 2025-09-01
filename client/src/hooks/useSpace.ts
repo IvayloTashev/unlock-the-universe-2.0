@@ -5,12 +5,14 @@ import { getAllAstronauts, getAllCelestialBodies, getAllMissions, getAstronautBy
 //CelestialBodies
 export const useGetAllCelestialBodies = () => {
     const [spaceData, setSpaceData] = useState<CelestialBodyType[] | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         (async () => {
-
             try {
+                setIsLoading(true);
                 const result = await getAllCelestialBodies() as CelestialBodyType[];
+                setIsLoading(false);
                 setSpaceData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
@@ -18,16 +20,19 @@ export const useGetAllCelestialBodies = () => {
         })();
     }, []);
 
-    return spaceData;
+    return {spaceData, isLoading};
 }
 
 export const useGetCelestialBodybyId = (id: string) => {
     const [spaceData, setSpaceData] = useState<CelestialBodyType | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         (async () => {
             try {
+                setIsLoading(true);
                 const result = await getCelestialBodybyId(id) as CelestialBodyType;
+                setIsLoading(false);
                 setSpaceData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
@@ -35,18 +40,21 @@ export const useGetCelestialBodybyId = (id: string) => {
         })();
     }, []);
 
-    return spaceData;
+    return {spaceData, isLoading};
 }
 
 //Astronauts
 export const useGetAllAstronauts = () => {
     const [astronautsData, setAstronautsData] = useState<AstronautType[] | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         (async () => {
 
             try {
+                setIsLoading(true);
                 const result = await getAllAstronauts() as AstronautType[];
+                setIsLoading(false);
                 setAstronautsData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
@@ -54,16 +62,19 @@ export const useGetAllAstronauts = () => {
         })();
     }, []);
 
-    return astronautsData;
+    return {astronautsData, isLoading};
 }
 
 export const useGetAstronautById = (id: string) => {
     const [astronautsData, setAstronautsData] = useState<AstronautType | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         (async () => {
             try {
+                setIsLoading(true);
                 const result = await getAstronautById(id) as AstronautType;
+                setIsLoading(false);
                 setAstronautsData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
@@ -71,7 +82,7 @@ export const useGetAstronautById = (id: string) => {
         })();
     }, []);
 
-    return astronautsData;
+    return {astronautsData, isLoading};
 }
 
 //Missions
