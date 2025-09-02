@@ -1,13 +1,25 @@
 import React from "react";
 import { useGetPod } from "../../../hooks/useGetPod";
 import { motion } from "motion/react";
+import SolarSystemLoader from "../../shared/LoadSpinner";
 
 const PictureOfTheDay = () => {
-  const nasaPodData = useGetPod();
+  const { nasaPicture, isLoading } = useGetPod();
 
   return (
     <section>
-      {nasaPodData?.media_type === "image" ? (
+      {isLoading && (
+        <motion.div
+          key="spinner"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.3 } }}
+          exit={{ opacity: 0, transition: { duration: 0.3 } }}
+        >
+          <SolarSystemLoader />
+        </motion.div>
+      )}
+
+      {nasaPicture?.media_type === "image" ? (
         <div className="p-5 flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-black via-gray-900 to-black">
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -15,7 +27,7 @@ const PictureOfTheDay = () => {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <img
-              src={nasaPodData.url}
+              src={nasaPicture.url}
               alt="nasaPictureOfTheDay"
               className="rounded-3xl max-h-[70vh] shadow-md shadow-purple-500/30"
             />
@@ -26,23 +38,23 @@ const PictureOfTheDay = () => {
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
             className="text-text-gray text-center p-6 max-w-[90vw] md:max-w-[80vw] bg-white/5 backdrop-blur-lg border border-gray-100/20 rounded-3xl"
           >
-            <h1 className="text-2xl font-bold">{nasaPodData.title}</h1>
-            <p className="mt-3">{nasaPodData.explanation}</p>
+            <h1 className="text-2xl font-bold">{nasaPicture.title}</h1>
+            <p className="mt-3">{nasaPicture.explanation}</p>
           </motion.div>
         </div>
       ) : (
         <div>
           <div>
             <iframe
-              src={nasaPodData?.url}
+              src={nasaPicture?.url}
               title="video"
               allowFullScreen
               className="w-full h-full"
             />
           </div>
           <div className="text-text-gray">
-            <h1>{nasaPodData?.title}</h1>
-            <p>{nasaPodData?.explanation}</p>
+            <h1>{nasaPicture?.title}</h1>
+            <p>{nasaPicture?.explanation}</p>
           </div>
         </div>
       )}

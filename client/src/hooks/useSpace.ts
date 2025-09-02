@@ -88,12 +88,15 @@ export const useGetAstronautById = (id: string) => {
 //Missions
 export const useGetAllMissions = () => {
     const [missionsData, setMissionsData] = useState<MissionType[] | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         (async () => {
 
             try {
+                setIsLoading(true);
                 const result = await getAllMissions() as MissionType[];
+                setIsLoading(false);
                 setMissionsData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
@@ -101,16 +104,19 @@ export const useGetAllMissions = () => {
         })();
     }, []);
 
-    return missionsData;
+    return {missionsData, isLoading};
 }
 
 export const useGetMissionById = (id: string) => {
     const [missionsData, setMissionsData] = useState<MissionType | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         (async () => {
             try {
+                setIsLoading(true);
                 const result = await getMissionById(id) as MissionType;
+                setIsLoading(false);
                 setMissionsData(result);
             } catch (err) {
                 console.error("Error fetching data:", err);
@@ -118,5 +124,5 @@ export const useGetMissionById = (id: string) => {
         })();
     }, []);
 
-    return missionsData;
+    return {missionsData, isLoading};
 }
