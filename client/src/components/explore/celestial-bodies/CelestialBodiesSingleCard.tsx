@@ -16,7 +16,7 @@ const CelestialBodiesSingleCard = () => {
         <motion.div
           key="spinner"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: 0.5, duration: 0.3 } }}
+          animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.3 } }}
           exit={{ opacity: 0, transition: { duration: 0.3 } }}
         >
           <SolarSystemLoader />
