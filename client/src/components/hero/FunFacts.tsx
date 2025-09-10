@@ -20,10 +20,11 @@ const FunFacts = () => {
         className="w-25 z-20 absolute -left-15 -top-15 opacity-90"
       />
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="bg-white/10 backdrop-blur-sm font-manrope text-white text-center text-base sm:text-lg max-w-2xl p-4 sm:p-5 rounded-xl border border-white/20 shadow-lg animate-fade-in"
+        whileHover={{
+          scale: 1.03,
+          boxShadow: "0 0 20px rgba(20, 184, 166, 0.6)",
+        }}
+        className="bg-white/10 backdrop-blur-md font-manrope text-white text-center text-base sm:text-lg max-w-2xl p-5 rounded-xl border border-teal-500/20 shadow-lg"
       >
         <span className="italic text-gray-200">{randomFact}</span>
       </motion.div>
