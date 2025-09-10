@@ -15,18 +15,30 @@ const Navbar = () => {
   const { isAuthenticated } = useAuthContext();
 
   const linkStyle =
-    "hover:text-teal-500 hover:scale-110 transition duration-500";
+    "relative hover:text-teal-400 hover:scale-110 transition duration-500 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-teal-400 after:to-purple-500 after:transition-all after:duration-500 hover:after:w-full";
 
   return (
     <nav className="bg-black/40 text-text-gray border-b border-teal-500/20 shadow-xl shadow-teal-500 text-2xl font-bebas px-5">
       <div className="flex items-center justify-between h-25">
         <Link to="/" className="z-40" onClick={() => setIsMenuToggled(false)}>
-          <motion.img className="h-22 rounded-4xl" src={navIcon} alt="planet" />
+          <motion.img
+            className="h-20 rounded-4xl"
+            src={navIcon}
+            alt="planet"
+            animate={{
+              filter: [
+                "drop-shadow(0 0 3px rgba(20, 184, 166, 0.5))",
+                "drop-shadow(0 0 8px rgba(147, 51, 234, 0.6))",
+                "drop-shadow(0 0 3px rgba(20, 184, 166, 0.5))",
+              ],
+            }}
+            transition={{ duration: 5, repeat: Infinity }}
+          />
         </Link>
 
         {isAboveMediumScreen ? (
           <>
-            <div className="flex gap-8">
+            <div className="flex gap-8 -ml-25">
               <Link to={"/explore"}>
                 <p className={`${linkStyle}`}>Explore</p>
               </Link>
