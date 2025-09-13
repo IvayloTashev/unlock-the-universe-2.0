@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import FunFacts from "./FunFacts";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 type Props = {
   position: string;
 };
 
 const HeroText = ({ position }: Props) => {
+
   return (
     <div
       className={`${position} absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 md:mt-20 font-bebas text-white flex flex-col justify-center items-center gap-1`}
@@ -18,13 +20,15 @@ const HeroText = ({ position }: Props) => {
         Dive into the cosmos and discover planets, astronauts, space missions
         and more like never before.
       </p>
+
       <Link
         to="/explore"
-        className="relative px-8 py-3 mt-6 rounded-full text-2xl font-semibold text-text-gray border border-gray-600 hover:border-teal-400 hover:text-teal-400 transition duration-300"
+        className="relative px-8 py-3 mt-6 rounded-full text-2xl font-semibold text-teal-400 border border-teal-500 transition duration-300 shadow-[0_0_15px_rgba(20,184,166,0.5)] sm:hover:border-teal-400 sm:hover:text-teal-400"
       >
-        Explore
-        <span className="absolute inset-0 rounded-full border border-teal-400 opacity-0 hover:opacity-40 animate-ping"></span>
+        <span className="relative z-10">Explore</span>
+        <span className="absolute inset-0 rounded-full border border-teal-400 opacity-30 animate-ping" />
       </Link>
+
       <FunFacts />
     </div>
   );
