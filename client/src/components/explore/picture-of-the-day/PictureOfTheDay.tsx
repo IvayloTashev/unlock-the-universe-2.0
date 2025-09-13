@@ -7,7 +7,11 @@ const PictureOfTheDay = () => {
   const { nasaPicture, isLoading } = useGetPod();
 
   return (
-    <section>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       {isLoading && (
         <motion.div
           key="spinner"
@@ -58,7 +62,7 @@ const PictureOfTheDay = () => {
           </div>
         </div>
       )}
-    </section>
+    </motion.section>
   );
 };
 

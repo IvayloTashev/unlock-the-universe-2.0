@@ -11,7 +11,12 @@ const CelestialBodiesSingleCard = () => {
   const { spaceData, isLoading } = useGetCelestialBodybyId(id!);
 
   return (
-    <section className="text-text-gray flex justify-center items-center">
+    <motion.section
+      className="text-text-gray flex justify-center items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       {isLoading && (
         <motion.div
           key="spinner"
@@ -159,7 +164,7 @@ const CelestialBodiesSingleCard = () => {
           </button>
         </>
       )}
-    </section>
+    </motion.section>
   );
 };
 

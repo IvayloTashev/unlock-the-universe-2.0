@@ -6,8 +6,13 @@ const PhotoCatalog = () => {
   const photos = useGetAllPhotos();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#181841] via-black to-[#181841] p-8">
-      <h1 className="text-5xl text-white mb-8 text-center font-bebas">
+    <motion.section
+      className="min-h-screen bg-gradient-to-bl from-black via-gray-900 to-black p-8"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
+      <h1 className="text-5xl mb-8 text-center font-bebas bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(147,51,234,0.6)]">
         Photo Gallery
       </h1>
 
@@ -28,7 +33,7 @@ const PhotoCatalog = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </motion.section>
   );
 };
 

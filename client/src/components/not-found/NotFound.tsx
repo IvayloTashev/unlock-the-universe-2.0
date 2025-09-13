@@ -4,7 +4,12 @@ import astronaut from "../../assets/astronaut-3.png";
 
 const NotFound = () => {
   return (
-    <div className="relative h-screen w-full flex flex-col items-center justify-center pt-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
+    <motion.section
+      className="relative h-screen w-full flex flex-col items-center justify-center pt-20 bg-gradient-to-b from-black via-gray-900 to-black text-white"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       <motion.img
         src={astronaut}
         alt="astronaut"
@@ -33,7 +38,7 @@ const NotFound = () => {
       >
         Return Home
       </Link>
-    </div>
+    </motion.section>
   );
 };
 

@@ -8,7 +8,12 @@ const AstronautsCatalog = () => {
   const { astronautsData, isLoading } = useGetAllAstronauts();
 
   return (
-    <section className="flex flex-col items-center px-4 py-12 bg-gradient-to-bl from-black via-gray-900 to-black">
+    <motion.section
+      className="flex flex-col items-center px-4 py-12 bg-gradient-to-bl from-black via-gray-900 to-black"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       {isLoading && (
         <motion.div
           key="spinner"
@@ -22,7 +27,7 @@ const AstronautsCatalog = () => {
 
       {astronautsData && !isLoading && (
         <>
-          <h1 className="font-bebas text-5xl md:text-6xl text-white mb-10">
+          <h1 className="font-bebas text-5xl mb-10 bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(147,51,234,0.6)]">
             Astronauts
           </h1>
 
@@ -48,7 +53,7 @@ const AstronautsCatalog = () => {
           </div>
         </>
       )}
-    </section>
+    </motion.section>
   );
 };
 

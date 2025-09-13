@@ -3,6 +3,7 @@ import backgroundImageDesktop from "../../assets/register-background-desktop.jpg
 import { EnvelopeIcon, LockClosedIcon } from "@heroicons/react/24/solid";
 import { Link, useNavigate } from "react-router-dom";
 import { useLoginAction } from "../../hooks/useForm";
+import { motion } from "motion/react";
 
 const LogIn = () => {
   const navigate = useNavigate();
@@ -18,13 +19,18 @@ const LogIn = () => {
   };
 
   useEffect(() => {
-    if(state?.success) {
-      navigate('/');
+    if (state?.success) {
+      navigate("/");
     }
-  }, [state])
+  }, [state]);
 
   return (
-    <section className="relative">
+    <motion.section
+      className="relative"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       <img
         src={backgroundImageDesktop}
         alt="background-image"
@@ -82,7 +88,7 @@ const LogIn = () => {
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

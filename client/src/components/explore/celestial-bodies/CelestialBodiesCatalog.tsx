@@ -10,7 +10,12 @@ const CelestialBodiesCatalog = () => {
   const { spaceData, isLoading } = useGetAllCelestialBodies();
 
   return (
-    <section className="flex flex-col justify-center items-center">
+    <motion.section
+      className="flex flex-col justify-center items-center bg-gradient-to-br from-black via-gray-900 to-black"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       {isLoading && (
         <motion.div
           key="spinner"
@@ -24,7 +29,7 @@ const CelestialBodiesCatalog = () => {
 
       {spaceData && !isLoading && (
         <>
-          <h1 className="font-bebas w-3/4 text-center text-5xl mt-15 text-white">
+          <h1 className="font-bebas w-3/4 text-center text-5xl mt-15 bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(147,51,234,0.6)]">
             Celestial bodies
           </h1>
           <div className="px-15 sm:px-10 md:px-20 mt-10 flex flex-wrap justify-center gap-5">
@@ -46,7 +51,7 @@ const CelestialBodiesCatalog = () => {
           </div>
         </>
       )}
-    </section>
+    </motion.section>
   );
 };
 

@@ -13,8 +13,12 @@ const AstronautSingleCard = () => {
   const isAbove2xl = useMediaQuery("(min-width: 1536px)");
 
   return (
-    <section className="min-h-screen text-text-gray py-16 px-4 relative bg-gradient-to-br from-black via-gray-900 to-black">
-      
+    <motion.section
+      className="min-h-screen text-text-gray py-16 px-4 relative bg-gradient-to-br from-black via-gray-900 to-black"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       {isLoading && (
         <motion.div
           key="spinner"
@@ -81,7 +85,7 @@ const AstronautSingleCard = () => {
           </motion.div>
         </div>
       )}
-    </section>
+    </motion.section>
   );
 };
 

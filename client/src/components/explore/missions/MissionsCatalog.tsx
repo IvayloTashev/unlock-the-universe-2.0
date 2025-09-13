@@ -8,7 +8,12 @@ const MissionsCatalog = () => {
   const { missionsData, isLoading } = useGetAllMissions();
 
   return (
-    <section className="px-5 py-10 bg-gradient-to-bl from-black via-gray-900 to-black">
+    <motion.section
+      className="px-5 py-10 bg-gradient-to-bl from-black via-gray-900 to-black"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       {isLoading && (
         <motion.div
           key="spinner"
@@ -21,28 +26,34 @@ const MissionsCatalog = () => {
       )}
 
       {missionsData && !isLoading && (
-        <div className="flex flex-col gap-8 items-center justify-center md:flex-row md:flex-wrap">
-          {missionsData?.map((item) => (
-            <Link
-              to={item._id}
-              className="relative w-[350px] h-[300px] rounded-2xl overflow-hidden shadow-xl group"
-              key={item._id}
-            >
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute bottom-0 w-full p-4 backdrop-blur-md bg-black/30">
-                <h2 className="text-white text-center text-2xl font-semibold group-hover:text-teal-500 group-hover:scale-115 transition duration-300">
-                  {item.name}
-                </h2>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <>
+          <h1 className="text-5xl mb-8 text-center font-bebas bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(147,51,234,0.6)]">
+            Missions
+          </h1>
+
+          <div className="flex flex-col gap-8 items-center justify-center md:flex-row md:flex-wrap">
+            {missionsData?.map((item) => (
+              <Link
+                to={item._id}
+                className="relative w-[350px] h-[300px] rounded-2xl overflow-hidden shadow-xl group"
+                key={item._id}
+              >
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 w-full p-4 backdrop-blur-md bg-black/30">
+                  <h2 className="text-white text-center text-2xl font-semibold group-hover:text-teal-500 group-hover:scale-115 transition duration-300">
+                    {item.name}
+                  </h2>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </>
       )}
-    </section>
+    </motion.section>
   );
 };
 

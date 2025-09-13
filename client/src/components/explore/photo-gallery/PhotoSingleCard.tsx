@@ -2,11 +2,20 @@ import { useActionState, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useGetOnePhoto } from "../../../hooks/usePhotos";
 import { useAuthContext } from "../../../contexts/AuthContext";
-import { PaperAirplaneIcon, TrashIcon, PencilSquareIcon } from "@heroicons/react/24/solid";
-import { useDeleteComment, useEditComment, useGetAllComments} from "../../../hooks/useComment";
+import {
+  PaperAirplaneIcon,
+  TrashIcon,
+  PencilSquareIcon,
+} from "@heroicons/react/24/solid";
+import {
+  useDeleteComment,
+  useEditComment,
+  useGetAllComments,
+} from "../../../hooks/useComment";
 import { useAddCommentAction } from "../../../hooks/useForm";
 import type { CommentType } from "../../../types";
 import { getAllComments } from "../../../api/commentsAPI";
+import { motion } from "motion/react";
 
 const PhotoSingleCard = () => {
   const { userId, isAuthenticated } = useAuthContext();
@@ -39,7 +48,12 @@ const PhotoSingleCard = () => {
   }, [state]);
 
   return (
-    <section className="bg-gradient-to-br from-gray-950 via-gray-900 to-black min-h-screen flex justify-center items-start px-4 py-10">
+    <motion.section
+      className="bg-gradient-to-br from-gray-950 via-gray-900 to-black min-h-screen flex justify-center items-start px-4 py-10"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       <div className="bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
         <div className="relative group">
           <img
@@ -138,7 +152,7 @@ const PhotoSingleCard = () => {
           )}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

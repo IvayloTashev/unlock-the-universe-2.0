@@ -12,7 +12,12 @@ const MissionSingleCard = () => {
   const { missionsData, isLoading } = useGetMissionById(id!);
 
   return (
-    <section className="bg-gradient-to-br from-black via-gray-900 to-black">
+    <motion.section
+      className="bg-gradient-to-br from-black via-gray-900 to-black"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       {isLoading && (
         <motion.div
           key="spinner"
@@ -50,7 +55,7 @@ const MissionSingleCard = () => {
           </div>
         </div>
       )}
-    </section>
+    </motion.section>
   );
 };
 

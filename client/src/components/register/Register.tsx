@@ -7,6 +7,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { Link, useNavigate } from "react-router-dom";
 import { useRegisterAction } from "../../hooks/useForm";
+import { motion } from "motion/react";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -30,7 +31,12 @@ const Register = () => {
   }, [state]);
 
   return (
-    <section className="relative">
+    <motion.section
+      className="relative"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       <img
         src={backgroundImageDesktop}
         alt="background-image"
@@ -105,7 +111,7 @@ const Register = () => {
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
