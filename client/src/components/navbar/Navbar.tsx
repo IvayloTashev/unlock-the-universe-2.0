@@ -19,7 +19,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black/40 text-text-gray border-b border-teal-500/20 shadow-xl shadow-teal-500 text-2xl font-bebas px-5">
-      <div className="flex items-center justify-between h-25">
+      <div className="flex items-center justify-between h-25 relative">
+
         <Link to="/" className="z-40" onClick={() => setIsMenuToggled(false)}>
           <motion.img
             className="h-20 rounded-4xl"
@@ -36,33 +37,34 @@ const Navbar = () => {
           />
         </Link>
 
-        {isAboveMediumScreen ? (
-          <>
-            <div className="flex gap-8 -ml-25">
-              <Link to={"/explore"}>
-                <p className={`${linkStyle}`}>Explore</p>
-              </Link>
-            </div>
+        {isAboveMediumScreen && (
+          <div className="absolute left-1/2 transform -translate-x-1/2">
+            <Link to="/explore">
+              <p className={`${linkStyle}`}>Explore</p>
+            </Link>
+          </div>
+        )}
 
+        {isAboveMediumScreen && (
+          <div className="flex gap-8">
             {!isAuthenticated ? (
-              <div className="flex gap-8">
+              <>
                 <Link to="/login">
                   <p className={`${linkStyle}`}>Log in</p>
                 </Link>
-
                 <Link to="/register">
                   <p className={`${linkStyle}`}>Register</p>
                 </Link>
-              </div>
+              </>
             ) : (
-              <div className="flex gap-8">
-                <Link to="/logout">
-                  <p className={`${linkStyle}`}>Logout</p>
-                </Link>
-              </div>
+              <Link to="/logout">
+                <p className={`${linkStyle}`}>Logout</p>
+              </Link>
             )}
-          </>
-        ) : (
+          </div>
+        )}
+
+        {!isAboveMediumScreen && (
           <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
             <Bars3Icon
               className={`${linkStyle} h-10 w-10 text-text-gray cursor-pointer`}
