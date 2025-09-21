@@ -24,7 +24,7 @@ const PictureOfTheDay = () => {
       )}
 
       {nasaPicture?.media_type === "image" ? (
-        <div className="p-5 flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-black via-gray-900 to-black">
+        <div className="p-5 flex flex-col gap-8 justify-center items-center h-screen bg-gradient-to-b from-black via-gray-900 to-black">
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}

@@ -34,7 +34,7 @@ const LogIn = () => {
       <img
         src={backgroundImageDesktop}
         alt="background-image"
-        className="absolute opacity-50 w-full h-[90vh] object-cover brightness-50"
+        className="absolute opacity-50 w-full h-screen object-cover brightness-50"
       />
 
       <div className="pt-40">
