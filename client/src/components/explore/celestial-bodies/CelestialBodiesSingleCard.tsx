@@ -12,7 +12,7 @@ const CelestialBodiesSingleCard = () => {
 
   return (
     <motion.section
-      className="text-text-gray flex justify-center items-center"
+      className="text-text-gray flex justify-center items-center pb-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeInOut" }}
@@ -49,10 +49,10 @@ const CelestialBodiesSingleCard = () => {
                     <a
                       key={item}
                       href={`#${item.toLocaleLowerCase().split(" ").join("-")}`}
-                      className="w-[45%] flex justify-between items-center px-4 py-2 border border-gray-100/20 bg-card hover:bg-gray-700 transition rounded-xl text-sm sm:text-base"
+                      className="group w-[45%] flex justify-between items-center px-4 py-2 border border-gray-100/20 bg-card hover:bg-gray-700 transition rounded-xl text-sm sm:text-base"
                     >
-                      <p>{item}</p>
-                      <ArrowDownIcon className="h-5 w-5" />
+                      <p className="group-hover:text-purple-500 group-hover:scale-110">{item}</p>
+                      <ArrowDownIcon className="h-5 w-5 group-hover:text-purple-500" />
                     </a>
                   ))}
                 </div>
@@ -63,7 +63,7 @@ const CelestialBodiesSingleCard = () => {
               id="facts"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Facts</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Facts</h2>
               <p>{spaceData?.facts}</p>
             </div>
 
@@ -71,7 +71,7 @@ const CelestialBodiesSingleCard = () => {
               id="introduction"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Introduction</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Introduction</h2>
               <p>{spaceData?.introduction}</p>
             </div>
 
@@ -79,7 +79,7 @@ const CelestialBodiesSingleCard = () => {
               id="namesake"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Namesake</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Namesake</h2>
               <p>{spaceData?.namesake}</p>
             </div>
 
@@ -87,7 +87,7 @@ const CelestialBodiesSingleCard = () => {
               id="potential-for-life"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Potential for Life</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Potential for Life</h2>
               <p>{spaceData?.potentialForLife}</p>
             </div>
 
@@ -95,7 +95,7 @@ const CelestialBodiesSingleCard = () => {
               id="size-and-distance"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Size and Distance</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Size and Distance</h2>
               <p>{spaceData?.sizeAndDistance}</p>
             </div>
 
@@ -103,7 +103,7 @@ const CelestialBodiesSingleCard = () => {
               id="orbit-and-rotation"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Orbit and Rotation</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Orbit and Rotation</h2>
               <p>{spaceData?.orbitAndRotation}</p>
             </div>
 
@@ -111,7 +111,7 @@ const CelestialBodiesSingleCard = () => {
               id="moons"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Moons</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Moons</h2>
               <p>{spaceData?.moons}</p>
             </div>
 
@@ -119,7 +119,7 @@ const CelestialBodiesSingleCard = () => {
               id="formation"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Formation</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Formation</h2>
               <p>{spaceData?.formation}</p>
             </div>
 
@@ -127,7 +127,7 @@ const CelestialBodiesSingleCard = () => {
               id="structure"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Structure</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Structure</h2>
               <p>{spaceData?.structure}</p>
             </div>
 
@@ -135,7 +135,7 @@ const CelestialBodiesSingleCard = () => {
               id="surface"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Surface</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Surface</h2>
               <p>{spaceData?.surface}</p>
             </div>
 
@@ -143,7 +143,7 @@ const CelestialBodiesSingleCard = () => {
               id="atmosphere"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Atmosphere</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Atmosphere</h2>
               <p>{spaceData?.atmosphere}</p>
             </div>
 
@@ -151,14 +151,14 @@ const CelestialBodiesSingleCard = () => {
               id="magnetosphere"
               className="bg-card border border-gray-100/20 p-4 rounded-xl"
             >
-              <h2 className="text-2xl font-bold mb-2">Magnetosphere</h2>
+              <h2 className="text-2xl font-bold mb-2 text-teal-500">Magnetosphere</h2>
               <p>{spaceData?.magnetosphere}</p>
             </div>
           </div>
 
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="fixed bottom-8 right-8 p-3 rounded-full bg-teal-500 text-white shadow-lg hover:scale-115 cursor-pointer animate-bounce z-20"
+            className="fixed bottom-8 right-8 p-3 rounded-full bg-teal-500 text-white shadow-lg hover:scale-115 cursor-pointer z-20"
           >
             ↑
           </button>
