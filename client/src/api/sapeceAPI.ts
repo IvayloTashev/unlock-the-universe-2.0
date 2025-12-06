@@ -1,6 +1,7 @@
 import { get } from "./requester";
 
-const BASE_URL = `http://localhost:3030/data`;
+const BASE_URL = 'https://unlock-the-universe-2.onrender.com/data'
+// const BASE_URL = `http://localhost:3030/data`;
 
 export const getAllCelestialBodies = () => get(`${BASE_URL}/celestialbodies`);
 export const getCelestialBodybyId = (id: string) => get(`${BASE_URL}/celestialbodies/${id}`);

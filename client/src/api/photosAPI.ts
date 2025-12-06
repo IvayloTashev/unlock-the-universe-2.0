@@ -1,7 +1,8 @@
 import type { PhotosType } from "../types";
 import { del, get, post } from "./requester";
 
-const BASE_URL = `http://localhost:3030/data/photos`;
+const BASE_URL = 'https://unlock-the-universe-2.onrender.com/data/photos'
+// const BASE_URL = `http://localhost:3030/data/photos`;
 
 export const getAllPhotos = () => get(BASE_URL);
 

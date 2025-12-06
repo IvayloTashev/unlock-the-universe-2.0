@@ -1,6 +1,7 @@
 import { post, get, put, del } from "./requester";
 
-const BASE_URL = 'http://localhost:3030/data/comments'
+const BASE_URL = 'https://unlock-the-universe-2.onrender.com/data/comments'
+// const BASE_URL = 'http://localhost:3030/data/comments'
 
 export const createComment = (id: string, text: string) => post(BASE_URL, { id, text });
 
