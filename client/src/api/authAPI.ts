@@ -1,7 +1,8 @@
 import type { AuthState } from "../types";
 import { get, post } from "./requester";
 
-const BASE_URL = 'http://localhost:3030/users'
+const BASE_URL = 'https://unlock-the-universe-2.onrender.com'
+//const BASE_URL = 'http://localhost:3030/users'
 
 export const login = (email: string, password: string): Promise<AuthState> => post(`${BASE_URL}/login`, { email, password });
 
